@@ -264,11 +264,11 @@ body {
 .chip.macd-gold { color: #2bb46e; font-weight: 800; border-color: #2bb46e; }
 .chip.macd-dead { color: #e23b3b; font-weight: 800; border-color: #e23b3b; }
 
-.kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 16px; }
-.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
-.kpi .label { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
-.kpi-eval { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
-.kpi-pnl { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
+.index-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; box-shadow: var(--shadow); }
+.index-card .idx-name { font-size: 11px; color: var(--text-muted); margin-bottom: 3px; }
+.index-card .idx-price { font-size: 14px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.index-card .idx-rate { font-size: 11px; font-weight: 700; }
 .kpi-pnlpct { font-size: 13px; font-variant-numeric: tabular-nums; }
 .kpi-pnl.up, .kpi-pnlpct.up { color: var(--up); }
 .kpi-pnl.down, .kpi-pnlpct.down { color: var(--down); }
@@ -286,11 +286,11 @@ body {
 .chart-legend b.r { color: #2f6bff; } .chart-legend b.g { color: #e23c3c; } .chart-legend b.y { color: #ffae00; }
 
 .section-title { font-size: 16px; font-weight: 800; margin: 20px 4px 10px; }
-.index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }
-.index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
-.index-card .idx-name { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
-.index-grid { grid-template-columns: repeat(2, 1fr); }
-}
+.index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
+.index-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; box-shadow: var(--shadow); }
+.index-card .idx-name { font-size: 11px; color: var(--text-muted); margin-bottom: 3px; }
+.index-card .idx-price { font-size: 14px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.index-card .idx-rate { font-size: 11px; font-weight: 700; }
 
 .gauge-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
 .gauge-item { display: flex; flex-direction: column; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); }
