@@ -90,6 +90,7 @@ async function loadPortfolio() {
     const data = await res.json();
     PORTFOLIO_DATA = data;
     renderPortfolio(data);
+    renderIndices(data.indices);
     document.getElementById('updated').textContent = '갱신: ' + (data.updated || '—');
   } catch (e) {
     Object.values(TAB_CLASS).forEach(({ grid }) => {
@@ -150,6 +151,21 @@ function renderPortfolio(data) {
   setKpi('kpiUs', us, 'US');
   setKpi('kpiCrypto', crypto, 'CRYPTO');
   setKpi('kpiEtf', etf);
+}
+
+// 글로벌 지수 카드
+function renderIndices(indices) {
+  const el = document.getElementById('indexGrid');
+  if (!el) return;
+  if (!indices || !indices.length) { el.innerHTML = '<div class="empty">지수 데이터 없음</div>'; return; }
+  el.innerHTML = indices.map(ix => {
+    const up = (ix.change_rate || 0) >= 0;
+    const cls = up ? 'up' : 'down';
+    const sign = up ? '+' : '';
+    const val = ix.price != null ? fmt(ix.price) : '—';
+    const rate = ix.change_rate != null ? `${sign}${fmt(ix.change_rate)}%` : '';
+    return `<div class="index-card"><div class="idx-name">${ix.name}</div><div class="idx-price ${cls}">${val}</div><div class="idx-rate ${cls}">${rate}</div></div>`;
+  }).join('');
 }
 
 loadPortfolio();

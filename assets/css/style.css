@@ -285,8 +285,16 @@ body {
 .chart-legend { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
 .chart-legend b.r { color: #2f6bff; } .chart-legend b.g { color: #e23c3c; } .chart-legend b.y { color: #ffae00; }
 
+.section-title { font-size: 16px; font-weight: 800; margin: 20px 4px 10px; }
+.index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }
+.index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.index-card .idx-name { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
+.index-card .idx-price { font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.index-card .idx-rate { font-size: 13px; font-weight: 700; }
+
 @media (max-width: 760px) {
   .drawer { width: 100vw; max-width: 100vw; }
   .ind-grid, .fund-grid, .pnl-grid { grid-template-columns: 1fr; }
   .kpi-row { grid-template-columns: repeat(2, 1fr); }
+  .index-grid { grid-template-columns: repeat(2, 1fr); }
 }
