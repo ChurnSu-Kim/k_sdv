@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 21:00 KST",
+  "updated": "2026-07-26 22:40 KST",
   "markets": {
     "KR": {
       "status": "CLOSED",
@@ -84,11 +84,20 @@
       "seed_price": 68058,
       "seed_as_of": "2026-07-10",
       "price": 249500.0,
-      "price_as_of": "2026-07-26 20:32 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -7.59,
       "change": -20500.0,
       "value": 2994000.0,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "fundamental": {
+        "market_cap": 14586465.0,
+        "per": 38.01,
+        "pbr": 3.9,
+        "dividend_yield": 0.0,
+        "high52": 374500.0,
+        "low52": 65500.0,
+        "listed_shares": 5846278608.0,
+        "foreign_net_buy": -2872978.0
+      },
       "indicators": {
         "rsi14": 56.2,
         "macd": {
@@ -117,7 +126,7 @@
           "d": 54.4,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -131,7 +140,7 @@
       "seed_price": 7083,
       "seed_as_of": "2026-07-10",
       "price": 4885.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -3.46,
       "change": -175.0,
       "value": 136780.0,
@@ -173,7 +182,7 @@
           "d": 22.6,
           "state": "중립"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -187,7 +196,7 @@
       "seed_price": 349000,
       "seed_as_of": "2026-07-10",
       "price": 259000.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -4.6,
       "change": -12500.0,
       "value": 518000.0,
@@ -229,7 +238,7 @@
           "d": 82.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -247,16 +256,7 @@
       "change_rate": 0.0,
       "change": 0.0,
       "value": 176624.0,
-      "fundamental": {
-        "market_cap": 663.0,
-        "per": -1.22,
-        "pbr": 4.21,
-        "dividend_yield": 0.0,
-        "high52": 5100.0,
-        "low52": 966.0,
-        "listed_shares": 57088614.0,
-        "foreign_net_buy": 0.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 50.8,
         "macd": {
@@ -285,7 +285,7 @@
           "d": 52.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -300,7 +300,7 @@
       "seed_price": 152747,
       "seed_as_of": "2026-07-10",
       "price": 41.7,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": 1.73,
       "change": 0.71,
       "value": 0.54,
@@ -332,7 +332,7 @@
           "d": 100.0,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -350,16 +350,7 @@
       "change_rate": -9.76,
       "change": -18300.0,
       "value": 169200.0,
-      "fundamental": {
-        "market_cap": 275601.0,
-        "per": 31.8,
-        "pbr": 1.28,
-        "dividend_yield": 0.0,
-        "high52": 438000.0,
-        "low52": 72000.0,
-        "listed_shares": 162884638.0,
-        "foreign_net_buy": -329227.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 69.3,
         "macd": {
@@ -388,7 +379,7 @@
           "d": 66.7,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -402,7 +393,7 @@
       "seed_price": 100300,
       "seed_as_of": "2026-07-10",
       "price": 100000.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": 0.5,
       "change": 500.0,
       "value": 200000.0,
@@ -444,7 +435,7 @@
           "d": 53.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -458,7 +449,7 @@
       "seed_price": 4852,
       "seed_as_of": "2026-07-10",
       "price": 3535.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -6.73,
       "change": -255.0,
       "value": 169680.0,
@@ -500,7 +491,7 @@
           "d": 56.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -514,7 +505,7 @@
       "seed_price": 23080,
       "seed_as_of": "2026-07-10",
       "price": 9920.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -8.49,
       "change": -920.0,
       "value": 555520.0,
@@ -556,7 +547,7 @@
           "d": 10.9,
           "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -570,11 +561,20 @@
       "seed_price": 28800,
       "seed_as_of": "2026-07-10",
       "price": 15300.0,
-      "price_as_of": "2026-07-26 20:32 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -6.36,
       "change": -1040.0,
       "value": 153000.0,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "fundamental": {
+        "market_cap": 62869.0,
+        "per": -6.97,
+        "pbr": 1.88,
+        "dividend_yield": 0.0,
+        "high52": 40350.0,
+        "low52": 3320.0,
+        "listed_shares": 410907638.0,
+        "foreign_net_buy": -316296.0
+      },
       "indicators": {
         "rsi14": 19.8,
         "macd": {
@@ -603,7 +603,7 @@
           "d": 13.9,
           "state": "중립"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -622,6 +622,7 @@
       "change_rate": -0.92,
       "change": 1.92,
       "value": 19.44,
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotati",
       "indicators": {
         "rsi14": 55.6,
         "macd": {
@@ -650,7 +651,7 @@
           "d": 70.8,
           "state": "중립"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -665,7 +666,7 @@
       "seed_price": 224.37,
       "seed_as_of": "2026-07-10",
       "price": 313.03,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -2.08,
       "change": 6.66,
       "value": 5.07,
@@ -697,7 +698,7 @@
           "d": 83.7,
           "state": "중립"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -711,7 +712,7 @@
       "seed_price": 9700,
       "seed_as_of": "2026-07-10",
       "price": 11025.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -1.87,
       "change": -210.0,
       "value": 1102500.0,
@@ -753,7 +754,7 @@
           "d": 4.4,
           "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -800,7 +801,7 @@
           "d": 38.3,
           "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -818,16 +819,7 @@
       "change_rate": -1.15,
       "change": -315.0,
       "value": 512335.0,
-      "fundamental": {
-        "market_cap": 197748.0,
-        "per": 0.0,
-        "pbr": 0.0,
-        "dividend_yield": 0.0,
-        "high52": 29000.0,
-        "low52": 21460.0,
-        "listed_shares": 733350000.0,
-        "foreign_net_buy": 105936.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 48.3,
         "macd": {
@@ -856,7 +848,7 @@
           "d": 35.9,
           "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -874,16 +866,7 @@
       "change_rate": 0.0,
       "change": 0.0,
       "value": 10270.0,
-      "fundamental": {
-        "market_cap": 2701.0,
-        "per": 0.0,
-        "pbr": 0.0,
-        "dividend_yield": 0.0,
-        "high52": 10895.0,
-        "low52": 8590.0,
-        "listed_shares": 26300000.0,
-        "foreign_net_buy": -2356.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 38.0,
         "macd": {
@@ -912,7 +895,7 @@
           "d": 59.7,
           "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1d"
       }
     },
@@ -925,11 +908,11 @@
       "qty": 0.89067766,
       "seed_price": 3114421,
       "seed_as_of": "2026-07-10",
-      "price": 2756000.0,
-      "price_as_of": "2026-07-26 21:00 KST",
-      "change_rate": 1.32,
+      "price": 2757000.0,
+      "price_as_of": "2026-07-26 22:40 KST",
+      "change_rate": 0.92,
       "change": null,
-      "value": 2454708.0,
+      "value": 2455598.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -2373,34 +2356,34 @@
         }
       ],
       "indicators": {
-        "rsi14": 62.2,
+        "rsi14": 65.9,
         "macd": {
-          "macd": 5673.84,
-          "signal": 5522.8111171664395,
-          "hist": 151.03,
+          "macd": 5661.27,
+          "signal": 5550.502893733152,
+          "hist": 110.77,
           "cross": "",
           "trend": "상승"
         },
         "ma": {
-          "ma5": 2753800.0,
-          "ma20": 2748850.0,
-          "ma60": 2735800.0,
-          "ma120": 2769908.33,
+          "ma5": 2755600.0,
+          "ma20": 2749800.0,
+          "ma60": 2736233.33,
+          "ma120": 2769250.0,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 2762565.32,
-          "mid": 2748850.0,
-          "lower": 2735134.68,
+          "upper": 2763000.0,
+          "mid": 2749800.0,
+          "lower": 2736600.0,
           "width_pct": 1.0,
           "position": "상단근접"
         },
         "stochastic": {
-          "k": 81.2,
-          "d": 80.4,
+          "k": 81.8,
+          "d": 79.4,
           "state": "과매수"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1h"
       }
     },
@@ -2413,11 +2396,11 @@
       "qty": 579,
       "seed_price": 2068,
       "seed_as_of": "2026-07-10",
-      "price": 1608.0,
-      "price_as_of": "2026-07-26 21:00 KST",
-      "change_rate": 0.82,
+      "price": 1605.0,
+      "price_as_of": "2026-07-26 22:40 KST",
+      "change_rate": 0.38,
       "change": null,
-      "value": 931032.0,
+      "value": 929295.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -3861,34 +3844,34 @@
         }
       ],
       "indicators": {
-        "rsi14": 47.1,
+        "rsi14": 44.4,
         "macd": {
-          "macd": 0.9,
-          "signal": 1.1564253322182185,
-          "hist": -0.26,
+          "macd": 0.48,
+          "signal": 0.9955402657745748,
+          "hist": -0.52,
           "cross": "",
           "trend": "하락"
         },
         "ma": {
-          "ma5": 1607.6,
-          "ma20": 1608.85,
-          "ma60": 1604.95,
-          "ma120": 1631.38,
+          "ma5": 1607.0,
+          "ma20": 1608.3,
+          "ma60": 1604.72,
+          "ma120": 1630.85,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 1613.2,
-          "mid": 1608.85,
-          "lower": 1604.5,
+          "upper": 1612.4,
+          "mid": 1608.3,
+          "lower": 1604.2,
           "width_pct": 0.5,
           "position": "하단근접"
         },
         "stochastic": {
-          "k": 33.3,
-          "d": 38.9,
-          "state": "중립"
+          "k": 0.0,
+          "d": 11.1,
+          "state": "과매도"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1h"
       }
     },
@@ -3901,11 +3884,11 @@
       "qty": 29,
       "seed_price": 2580,
       "seed_as_of": "2026-07-10",
-      "price": 849.0,
-      "price_as_of": "2026-07-26 21:00 KST",
+      "price": 851.0,
+      "price_as_of": "2026-07-26 22:40 KST",
       "change_rate": -0.35,
       "change": null,
-      "value": 24621.0,
+      "value": 24679.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -5349,34 +5332,34 @@
         }
       ],
       "indicators": {
-        "rsi14": 41.3,
+        "rsi14": 47.7,
         "macd": {
-          "macd": -2.02,
-          "signal": -1.3444177864905367,
-          "hist": -0.68,
+          "macd": -1.99,
+          "signal": -1.4607342291924295,
+          "hist": -0.53,
           "cross": "",
           "trend": "하락"
         },
         "ma": {
-          "ma5": 849.6,
-          "ma20": 855.35,
-          "ma60": 861.72,
-          "ma120": 896.5,
+          "ma5": 850.0,
+          "ma20": 855.25,
+          "ma60": 861.27,
+          "ma120": 895.49,
           "arrangement": "역배열"
         },
         "bollinger": {
-          "upper": 864.34,
-          "mid": 855.35,
-          "lower": 846.36,
+          "upper": 864.3,
+          "mid": 855.25,
+          "lower": 846.2,
           "width_pct": 2.1,
           "position": "하단근접"
         },
         "stochastic": {
-          "k": 7.1,
-          "d": 10.1,
-          "state": "과매도"
+          "k": 21.4,
+          "d": 11.9,
+          "state": "중립"
         },
-        "updated": "2026-07-26 21:00 KST",
+        "updated": "2026-07-26 22:40 KST",
         "basis": "1h"
       }
     }
