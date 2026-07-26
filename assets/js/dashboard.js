@@ -202,7 +202,7 @@ function renderDrawer(a) {
   const pnCls = pnl >= 0 ? 'up' : 'down';
   const cost = (avg || 0) * (a.qty || 0);
   document.getElementById('pnlHeader').innerHTML = `
-    <div class="pnl-price">${ccy(a)}${fmt(a.price)} <span class="${plCls}">${plSign(a.change_rate)}%</span></div>
+    <div class="pnl-price">${ccy(a)}${fmt(a.price)} <span class="${plCls}">${plSign(a.change_rate)}${fmt(a.change_rate)}%</span></div>
     <div class="pnl-grid">
       <div><span class="lbl">평단가</span><span class="val">${ccy(a)}${fmt(avg)}</span></div>
       <div><span class="lbl">보유수량</span><span class="val">${fmt(a.qty)}</span></div>
@@ -238,7 +238,7 @@ function renderTech(a) {
   const cards = [];
   cards.push(indicatorCard('RSI(14)', ind.rsi14 != null ? ind.rsi14 : '—',
     ind.rsi14 >= 70 ? 'over' : ind.rsi14 <= 30 ? 'under' : ''));
-  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '—'),
+  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '0'),
     macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : '')));
   cards.push(indicatorCard('이동평균 배열', ma.arrangement || '—',
     ma.arrangement === '정배열' ? 'gold' : ma.arrangement === '역배열' ? 'dead' : ''));
@@ -273,7 +273,7 @@ function renderGaugeInto(slotId, a) {
   if (bb.position != null) wrap.appendChild(gaugeCanvas('g_bb', bb.position, 0, 100, '볼린저 %B', [
     { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
   ]));
-  if (st.k != null) wrap.appendChild(gaugeCanvas('g_st', st.k, 0, 100, '스토캐스틱 %K', [
+  if (st.k != null || (st['k'] != null)) wrap.appendChild(gaugeCanvas('g_st', st.k != null ? st.k : st['k'], 0, 100, '스토캐스틱 %K', [
     { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
   ]));
   if (!wrap.children.length) { el.innerHTML = '<div class="empty">게이지 표시할 지표 없음</div>'; return; }
@@ -346,7 +346,7 @@ function renderGauge(a) {
   if (bb.position != null) wrap.appendChild(gaugeCanvas('g_bb', bb.position, 0, 100, '볼린저 %B', [
     { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
   ]));
-  if (st.k != null) wrap.appendChild(gaugeCanvas('g_st', st.k, 0, 100, '스토캐스틱 %K', [
+  if (st.k != null || (st['k'] != null)) wrap.appendChild(gaugeCanvas('g_st', st.k != null ? st.k : st['k'], 0, 100, '스토캐스틱 %K', [
     { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
   ]));
   if (!wrap.children.length) { el.innerHTML = '<div class="empty">게이지 표시할 지표 없음</div>'; return; }
