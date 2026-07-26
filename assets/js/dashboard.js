@@ -235,7 +235,7 @@ function renderTech(a) {
 function renderFund(a) {
   const f = a.fundamental || {};
   if (!Object.keys(f).length) {
-    document.getElementById('dpanel-fund').innerHTML = '<div class="empty">펀더멘털 데이터 없음 (평일 장 중 수집)</div>';
+    document.getElementById('dpanel-fund').innerHTML = '<div class="empty">펀더멘털/수급 데이터 없음 (평일 장 중 수집)</div>';
     return;
   }
   const w = ccy(a);
@@ -246,6 +246,7 @@ function renderFund(a) {
     ['배당수익률', f.dividend_yield != null ? f.dividend_yield + '%' : '—'],
     ['52주 고가', f.high52 != null ? w + fmt(f.high52) : '—'],
     ['52주 저가', f.low52 != null ? w + fmt(f.low52) : '—'],
+    ['외국인 순매수', f.foreign_net_buy != null ? fmt(f.foreign_net_buy) + '주' : '—'],
   ];
   document.getElementById('dpanel-fund').innerHTML =
     `<div class="fund-grid">${rows.map(([k, v]) => `<div class="fund-cell"><span class="lbl">${k}</span><span class="val">${v}</span></div>`).join('')}</div>`;
