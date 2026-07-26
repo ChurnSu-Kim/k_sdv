@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 15:41 KST",
+  "updated": "2026-07-26 15:47 KST",
   "markets": {
     "KR": {
       "status": "CLOSED",
@@ -84,7 +84,7 @@
       "seed_price": 68058,
       "seed_as_of": "2026-07-10",
       "price": 249500.0,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": -7.59,
       "change": -20500.0,
       "value": 2994000.0,
@@ -132,27 +132,27 @@
     },
     {
       "name": "코위버",
-      "code": "036500",
+      "code": "056360",
       "market": "KR",
       "type": "STOCK",
       "broker": "한투+카카오",
       "qty": 28,
       "seed_price": 7083,
       "seed_as_of": "2026-07-10",
-      "price": null,
-      "price_as_of": "2026-07-10",
-      "change_rate": null,
-      "change": null,
-      "value": null,
+      "price": 4885.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": -3.46,
+      "change": -175.0,
+      "value": 136780.0,
       "fundamental": {
-        "market_cap": 0.0,
-        "per": 0.0,
-        "pbr": 0.0,
+        "market_cap": 479.0,
+        "per": 13.8,
+        "pbr": 0.28,
         "dividend_yield": 0.0,
-        "high52": 0.0,
-        "low52": 0.0,
-        "listed_shares": 0.0,
-        "foreign_net_buy": 0.0
+        "high52": 14550.0,
+        "low52": 4405.0,
+        "listed_shares": 9796800.0,
+        "foreign_net_buy": -6673.0
       },
       "indicators_error": "'str' object has no attribute 'get'"
     },
@@ -166,7 +166,7 @@
       "seed_price": 349000,
       "seed_as_of": "2026-07-10",
       "price": 259000.0,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": -4.6,
       "change": -12500.0,
       "value": 518000.0,
@@ -214,7 +214,7 @@
     },
     {
       "name": "한국첨단소재",
-      "code": "071970",
+      "code": "062970",
       "market": "KR",
       "type": "STOCK",
       "broker": "한투+카카오",
@@ -266,8 +266,7 @@
         },
         "updated": "2026-07-26 15:09 KST"
       },
-      "indicators_stale": true,
-      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "indicators_stale": true
     },
     {
       "name": "나이키B(미니스탁)",
@@ -280,7 +279,7 @@
       "seed_price": 152747,
       "seed_as_of": "2026-07-10",
       "price": 41.7,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": 1.73,
       "change": 0.71,
       "value": 1.0,
@@ -327,7 +326,7 @@
       "seed_price": 237000,
       "seed_as_of": "2026-07-10",
       "price": 169200.0,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": -9.76,
       "change": -18300.0,
       "value": 169200.0,
@@ -383,7 +382,7 @@
       "seed_price": 100300,
       "seed_as_of": "2026-07-10",
       "price": 100000.0,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": 0.5,
       "change": 500.0,
       "value": 200000.0,
@@ -431,7 +430,7 @@
     },
     {
       "name": "한온시스템",
-      "code": "069080",
+      "code": "018880",
       "market": "KR",
       "type": "STOCK",
       "broker": "카카오",
@@ -487,7 +486,7 @@
     },
     {
       "name": "대한광통신",
-      "code": "059540",
+      "code": "010170",
       "market": "KR",
       "type": "STOCK",
       "broker": "키움",
@@ -573,6 +572,7 @@
       "change_rate": -0.92,
       "change": 1.92,
       "value": 19.0,
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotati",
       "indicators_error": "'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 55.6,
@@ -617,7 +617,7 @@
       "seed_price": 224.37,
       "seed_as_of": "2026-07-10",
       "price": 313.03,
-      "price_as_of": "2026-07-26 15:41 KST",
+      "price_as_of": "2026-07-26 15:47 KST",
       "change_rate": -2.08,
       "change": 6.66,
       "value": 5.0,
@@ -656,76 +656,85 @@
     },
     {
       "name": "TIGER 미국나스닥100커버드콜",
-      "code": "436960",
+      "code": "486290",
       "market": "KR",
       "type": "ETF",
       "broker": "한투",
       "qty": 100,
       "seed_price": 9700,
       "seed_as_of": "2026-07-10",
-      "price": null,
-      "price_as_of": "2026-07-10",
-      "change_rate": null,
-      "change": null,
-      "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "price": 11025.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": -1.87,
+      "change": -210.0,
+      "value": 1102500.0,
+      "fundamental": {
+        "market_cap": 21802.0,
+        "per": 0.0,
+        "pbr": 0.0,
+        "dividend_yield": 0.0,
+        "high52": 12510.0,
+        "low52": 9650.0,
+        "listed_shares": 197750000.0,
+        "foreign_net_buy": 1120319.0
+      },
       "indicators_error": "'str' object has no attribute 'get'"
     },
     {
       "name": "SOL 미국S&P500",
-      "code": "433340",
+      "code": "433330",
       "market": "KR",
       "type": "ETF",
       "broker": "한투",
       "qty": 21,
       "seed_price": 23830,
       "seed_as_of": "2026-07-10",
-      "price": null,
-      "price_as_of": "2026-07-10",
-      "change_rate": null,
-      "change": null,
-      "value": null,
+      "price": 22485.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": -1.19,
+      "change": -270.0,
+      "value": 472185.0,
       "fundamental": {
-        "market_cap": 0.0,
+        "market_cap": 2856.0,
         "per": 0.0,
         "pbr": 0.0,
         "dividend_yield": 0.0,
-        "high52": 0.0,
-        "low52": 0.0,
-        "listed_shares": 0.0,
-        "foreign_net_buy": 0.0
+        "high52": 24210.0,
+        "low52": 17950.0,
+        "listed_shares": 12700000.0,
+        "foreign_net_buy": -1056.0
       },
       "indicators_error": "'str' object has no attribute 'get'"
     },
     {
       "name": "TIGER 미국S&P500",
-      "code": "460920",
+      "code": "360750",
       "market": "KR",
       "type": "ETF",
       "broker": "한투",
       "qty": 19,
       "seed_price": 13042,
       "seed_as_of": "2026-07-10",
-      "price": null,
-      "price_as_of": "2026-07-10",
-      "change_rate": null,
-      "change": null,
-      "value": null,
+      "price": 26965.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": -1.15,
+      "change": -315.0,
+      "value": 512335.0,
       "fundamental": {
-        "market_cap": 0.0,
+        "market_cap": 197748.0,
         "per": 0.0,
         "pbr": 0.0,
         "dividend_yield": 0.0,
-        "high52": 0.0,
-        "low52": 0.0,
-        "listed_shares": 0.0,
-        "foreign_net_buy": 0.0
+        "high52": 29000.0,
+        "low52": 21460.0,
+        "listed_shares": 733350000.0,
+        "foreign_net_buy": 105936.0
       },
       "indicators_error": "'str' object has no attribute 'get'"
     },
     {
       "name": "TIGER 미국배당다우존스",
-      "code": "466920",
+      "code": "0008S0",
       "market": "KR",
       "type": "ETF",
       "broker": "한투",
@@ -737,16 +746,7 @@
       "change_rate": -2.94,
       "change": -885.0,
       "value": 29240.0,
-      "fundamental": {
-        "market_cap": 15614.0,
-        "per": 0.0,
-        "pbr": 0.0,
-        "dividend_yield": 0.0,
-        "high52": 43020.0,
-        "low52": 26100.0,
-        "listed_shares": 53400000.0,
-        "foreign_net_buy": 48985.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators_error": "'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 56.4,
@@ -777,8 +777,7 @@
         },
         "updated": "2026-07-26 15:09 KST"
       },
-      "indicators_stale": true,
-      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "indicators_stale": true
     },
     {
       "name": "이더리움",
@@ -789,16 +788,16 @@
       "qty": 0.89067766,
       "seed_price": 3114421,
       "seed_as_of": "2026-07-10",
-      "price": 2750000.0,
-      "price_as_of": "2026-07-26 15:41 KST",
-      "change_rate": 1.25,
+      "price": 2751000.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": 1.33,
       "change": null,
-      "value": 2449364.0,
+      "value": 2450254.0,
       "indicators": {
         "rsi14": 55.9,
         "macd": {
           "macd": 240578.62,
-          "signal": 319789.6531984396,
+          "signal": 319789.65310521185,
           "hist": -79211.03,
           "cross": "없음"
         },
@@ -821,7 +820,7 @@
           "d": 27.3,
           "state": "과매도"
         },
-        "updated": "2026-07-26 15:41 KST"
+        "updated": "2026-07-26 15:47 KST"
       },
       "chart_1h": [
         {
@@ -2276,8 +2275,8 @@
       "seed_price": 2068,
       "seed_as_of": "2026-07-10",
       "price": 1606.0,
-      "price_as_of": "2026-07-26 15:41 KST",
-      "change_rate": 0.82,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": 0.88,
       "change": null,
       "value": 929874.0,
       "indicators": {
@@ -2307,7 +2306,7 @@
           "d": 71.4,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:41 KST"
+        "updated": "2026-07-26 15:47 KST"
       },
       "chart_1h": [
         {
@@ -3761,16 +3760,16 @@
       "qty": 29,
       "seed_price": 2580,
       "seed_as_of": "2026-07-10",
-      "price": 860.0,
-      "price_as_of": "2026-07-26 15:41 KST",
-      "change_rate": 1.65,
+      "price": 859.0,
+      "price_as_of": "2026-07-26 15:47 KST",
+      "change_rate": 1.66,
       "change": null,
-      "value": 24940.0,
+      "value": 24911.0,
       "indicators": {
         "rsi14": 77.4,
         "macd": {
           "macd": 134.48,
-          "signal": 129.98120767936354,
+          "signal": 129.98120767937024,
           "hist": 4.5,
           "cross": "없음"
         },
@@ -3793,7 +3792,7 @@
           "d": 84.3,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:41 KST"
+        "updated": "2026-07-26 15:47 KST"
       },
       "chart_1h": [
         {
