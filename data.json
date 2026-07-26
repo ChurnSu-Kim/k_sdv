@@ -104,7 +104,8 @@
           "macd": -3492.91,
           "signal": -7101.100953093634,
           "hist": 3608.19,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 192720.0,
@@ -152,6 +153,11 @@
         "low52": 4405.0,
         "listed_shares": 9796800.0,
         "foreign_net_buy": -6673.0
+      },
+      "indicators": {
+        "macd": {
+          "trend": "보합"
+        }
       }
     },
     {
@@ -184,7 +190,8 @@
           "macd": 5815.06,
           "signal": -5508.48962106625,
           "hist": 11323.55,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 347300.0,
@@ -240,7 +247,8 @@
           "macd": 113.15,
           "signal": -758.7681433393593,
           "hist": 871.92,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 80160.0,
@@ -279,14 +287,15 @@
       "price_as_of": "2026-07-26 16:38 KST",
       "change_rate": 1.73,
       "change": 0.71,
-      "value": 1.0,
+      "value": 0.54,
       "indicators": {
         "rsi14": 84.6,
         "macd": {
           "macd": 2.91,
           "signal": 2.650537471329698,
           "hist": 0.26,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 57.92,
@@ -341,7 +350,8 @@
           "macd": -230.09,
           "signal": -4093.2869878530396,
           "hist": 3863.2,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 123140.0,
@@ -396,7 +406,8 @@
           "macd": -2544.64,
           "signal": -3316.877884334275,
           "hist": 772.24,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 76540.0,
@@ -452,7 +463,8 @@
           "macd": 135.39,
           "signal": 93.78159540072964,
           "hist": 41.61,
-          "cross": "골든"
+          "cross": "골든",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 12520.0,
@@ -491,7 +503,7 @@
       "price_as_of": "2026-07-10",
       "change_rate": null,
       "change": null,
-      "value": null,
+      "value": 1292480,
       "fundamental": {
         "market_cap": 0.0,
         "per": 0.0,
@@ -501,6 +513,11 @@
         "low52": 0.0,
         "listed_shares": 0.0,
         "foreign_net_buy": 0.0
+      },
+      "indicators": {
+        "macd": {
+          "trend": "보합"
+        }
       }
     },
     {
@@ -534,7 +551,8 @@
           "macd": -3400.8,
           "signal": -3537.83845791517,
           "hist": 137.04,
-          "cross": "골든"
+          "cross": "골든",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 8780.0,
@@ -573,14 +591,15 @@
       "price_as_of": "2026-07-26 16:38 KST",
       "change_rate": -0.92,
       "change": 1.92,
-      "value": 19.0,
+      "value": 19.44,
       "indicators": {
         "rsi14": 55.6,
         "macd": {
           "macd": -1.58,
           "signal": -2.7218122451530453,
           "hist": 1.14,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 181.38,
@@ -619,14 +638,15 @@
       "price_as_of": "2026-07-26 16:38 KST",
       "change_rate": -2.08,
       "change": 6.66,
-      "value": 5.0,
+      "value": 5.07,
       "indicators": {
         "rsi14": 55.6,
         "macd": {
           "macd": 6.18,
           "signal": 4.912135477204454,
           "hist": 1.27,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 399.87,
@@ -674,6 +694,11 @@
         "low52": 9650.0,
         "listed_shares": 197750000.0,
         "foreign_net_buy": 1120319.0
+      },
+      "indicators": {
+        "macd": {
+          "trend": "보합"
+        }
       }
     },
     {
@@ -690,7 +715,12 @@
       "change_rate": -1.19,
       "change": -270.0,
       "value": 472185.0,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "indicators": {
+        "macd": {
+          "trend": "보합"
+        }
+      }
     },
     {
       "name": "TIGER 미국S&P500",
@@ -715,6 +745,11 @@
         "low52": 21460.0,
         "listed_shares": 733350000.0,
         "foreign_net_buy": 105936.0
+      },
+      "indicators": {
+        "macd": {
+          "trend": "보합"
+        }
       }
     },
     {
@@ -747,7 +782,8 @@
           "macd": 193.63,
           "signal": 65.48283323154118,
           "hist": 128.15,
-          "cross": "골든"
+          "cross": "골든",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 35477.2,
@@ -2234,7 +2270,8 @@
           "macd": 6329.94,
           "signal": 5194.615715962032,
           "hist": 1135.32,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 2754200.0,
@@ -3721,7 +3758,8 @@
           "macd": 1.34,
           "signal": 1.495219885919856,
           "hist": -0.16,
-          "cross": "데드"
+          "cross": "데드",
+          "trend": "하락"
         },
         "ma": {
           "ma5": 1608.6,
@@ -5208,7 +5246,8 @@
           "macd": 0.11,
           "signal": -1.0795601394364516,
           "hist": 1.19,
-          "cross": "없음"
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 859.6,
