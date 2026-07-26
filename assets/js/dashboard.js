@@ -57,8 +57,11 @@ function isStale(asOf) {
 }
 
 function assetCard(a) {
-  const plCls = (a.change || 0) >= 0 ? 'up' : 'down';
-  const plSign = (a.change || 0) >= 0 ? '+' : '';
+  const avg = a.avg_price != null ? a.avg_price : a.seed_price;
+  const pnl = ((a.price || 0) - (avg || 0)) * (a.qty || 0);
+  const pnlPct = avg ? ((a.price || 0) - avg) / avg * 100 : 0;
+  const plCls = pnl >= 0 ? 'up' : 'down';
+  const plSign = pnl >= 0 ? '+' : '';
   const ind = a.indicators || {};
   const maArr = ind.ma && ind.ma.arrangement ? ind.ma.arrangement : '';
   const rsi = ind.rsi14 != null ? ind.rsi14 : null;
@@ -75,7 +78,7 @@ function assetCard(a) {
     <div class="name"><span>${a.name}</span><span class="broker">${a.broker || ''}</span></div>
     <div class="price">${sym}${fmt(a.price)} <span class="${plCls}">${plSign}${fmt(a.change_rate)}%</span></div>
     <div class="price-sub">${subLabel}</div>
-    <div class="pl ${plCls}">${plSign}${sym}${fmt(a.change)} (${a.qty || ''}주)</div>
+    <div class="pl ${plCls}">${plSign}${sym}${fmt(pnl)} (${pnlPct>=0?'+':''}${Math.round(pnlPct)}% · ${a.qty || ''}주)</div>
     <div class="${asOfCls}">기준: ${a.price_as_of || '—'}</div>
     <div class="indicators">${chips.join('')}</div>
   </div>`;
@@ -235,7 +238,7 @@ function renderTech(a) {
   const cards = [];
   cards.push(indicatorCard('RSI(14)', ind.rsi14 != null ? ind.rsi14 : '—',
     ind.rsi14 >= 70 ? 'over' : ind.rsi14 <= 30 ? 'under' : ''));
-  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '없음' && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '—'),
+  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '—'),
     macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : '')));
   cards.push(indicatorCard('이동평균 배열', ma.arrangement || '—',
     ma.arrangement === '정배열' ? 'gold' : ma.arrangement === '역배열' ? 'dead' : ''));
