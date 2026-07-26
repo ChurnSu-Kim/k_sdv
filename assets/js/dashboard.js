@@ -235,7 +235,7 @@ function renderTech(a) {
   const cards = [];
   cards.push(indicatorCard('RSI(14)', ind.rsi14 != null ? ind.rsi14 : '—',
     ind.rsi14 >= 70 ? 'over' : ind.rsi14 <= 30 ? 'under' : ''));
-  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '없음') ? macd.cross : (macd.trend || '—'),
+  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '없음' && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '—'),
     macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : '')));
   cards.push(indicatorCard('이동평균 배열', ma.arrangement || '—',
     ma.arrangement === '정배열' ? 'gold' : ma.arrangement === '역배열' ? 'dead' : ''));
