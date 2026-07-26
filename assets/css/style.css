@@ -289,8 +289,26 @@ body {
 .index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 8px; }
 .index-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
 .index-card .idx-name { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
-.index-card .idx-price { font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
-.index-card .idx-rate { font-size: 13px; font-weight: 700; }
+.index-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.gauge-grid { display: flex; flex-wrap: wrap; gap: 16px; justify-content: flex-start; }
+.gauge-item { display: flex; flex-direction: column; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); }
+.gauge-canvas { width: 160px; height: 96px; }
+.gauge-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; font-weight: 600; }
+.gauge-val { font-size: 18px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.news-list { display: flex; flex-direction: column; gap: 10px; }
+.news-item { display: flex; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.news-tag { font-size: 11px; font-weight: 800; padding: 3px 10px; border-radius: 20px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.news-body { font-size: 13px; color: var(--text); }
+
+.ai-guide-box { background: linear-gradient(135deg, #eef3ff, #f7faff); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+.ai-guide-signal { display: inline-block; font-size: 15px; font-weight: 800; padding: 6px 16px; border-radius: 10px; margin-bottom: 10px; }
+.ai-guide-signal.buy { background: rgba(43,180,110,0.18); color: #2bb46e; }
+.ai-guide-signal.sell { background: rgba(226,59,59,0.15); color: #e23b3b; }
+.ai-guide-signal.hold { background: rgba(77,155,255,0.18); color: #4d9bff; }
+.ai-guide-text { font-size: 14px; line-height: 1.6; color: var(--text); }
 
 @media (max-width: 760px) {
   .drawer { width: 100vw; max-width: 100vw; }

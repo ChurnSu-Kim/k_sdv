@@ -210,6 +210,9 @@ function renderDrawer(a) {
   renderTech(a);
   renderFund(a);
   renderMarket(a);
+  renderGauge(a);
+  renderNews(a);
+  renderAI(a);
   renderPnl(a, avg, pnl, pnlPct, evalAmt, cost);
   document.querySelectorAll('.dtab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.dpanel').forEach(p => p.classList.remove('active'));
@@ -266,6 +269,87 @@ function renderFund(a) {
   ];
   document.getElementById('dpanel-fund').innerHTML =
     `<div class="fund-grid">${rows.map(([k, v]) => `<div class="fund-cell"><span class="lbl">${k}</span><span class="val">${v}</span></div>`).join('')}</div>`;
+}
+
+// 반원 게이지 (RSI / 볼린저 / 스토캐스틱)
+function gaugeCanvas(id, value, min, max, label, zones) {
+  // zones: [{to, color}]
+  const c = document.createElement('canvas');
+  c.width = 160; c.height = 96; c.className = 'gauge-canvas';
+  const ctx = c.getContext('2d');
+  const cx = 80, cy = 88, r = 66;
+  const start = Math.PI, end = 2 * Math.PI;
+  // 배경 트랙
+  ctx.lineWidth = 12; ctx.strokeStyle = '#e2e8f0';
+  ctx.beginPath(); ctx.arc(cx, cy, r, start, end); ctx.stroke();
+  // 컬러 존
+  for (const z of zones) {
+    const a0 = start + (z.from - min) / (max - min) * Math.PI;
+    const a1 = start + (z.to - min) / (max - min) * Math.PI;
+    ctx.strokeStyle = z.color;
+    ctx.beginPath(); ctx.arc(cx, cy, r, a0, a1); ctx.stroke();
+  }
+  // 눈금 바늘
+  const va = start + Math.max(0, Math.min(1, (value - min) / (max - min))) * Math.PI;
+  ctx.strokeStyle = '#1a2233'; ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + r * Math.cos(va), cy + r * Math.sin(va)); ctx.stroke();
+  ctx.fillStyle = '#1a2233';
+  ctx.beginPath(); ctx.arc(cx, cy, 4, 0, 2 * Math.PI); ctx.fill();
+  const wrap = document.createElement('div'); wrap.className = 'gauge-item';
+  wrap.appendChild(c);
+  const lab = document.createElement('div'); lab.className = 'gauge-label'; lab.textContent = label;
+  const val = document.createElement('div'); val.className = 'gauge-val'; val.textContent = (value != null ? Math.round(value * 10) / 10 : '—');
+  wrap.appendChild(lab); wrap.appendChild(val);
+  return wrap;
+}
+
+function renderGauge(a) {
+  const el = document.getElementById('dpanel-gauge');
+  const ind = a.indicators || {};
+  if (!Object.keys(ind).length) { el.innerHTML = '<div class="empty">기술적지표 데이터 없음</div>'; return; }
+  const rsi = ind.rsi14;
+  const bb = ind.bollinger || {};
+  const st = ind.stochastic || {};
+  const wrap = document.createElement('div'); wrap.className = 'gauge-grid';
+  if (rsi != null) wrap.appendChild(gaugeCanvas('g_rsi', rsi, 0, 100, 'RSI', [
+    { from: 0, to: 30, color: '#2bb46e' }, { from: 30, to: 70, color: '#4f7cff' }, { from: 70, to: 100, color: '#e23b3b' }
+  ]));
+  if (bb.position != null) wrap.appendChild(gaugeCanvas('g_bb', bb.position, 0, 100, '볼린저 %B', [
+    { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
+  ]));
+  if (st.k != null) wrap.appendChild(gaugeCanvas('g_st', st.k, 0, 100, '스토캐스틱 %K', [
+    { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
+  ]));
+  if (!wrap.children.length) { el.innerHTML = '<div class="empty">게이지 표시할 지표 없음</div>'; return; }
+  el.innerHTML = ''; el.appendChild(wrap);
+}
+
+// 뉴스/공시 (기술적 시그널 기반 자동 요약 — 한투 뉴스 API 한도 보호)
+function renderNews(a) {
+  const el = document.getElementById('dpanel-news');
+  const ind = a.indicators || {};
+  const items = [];
+  const rsi = ind.rsi14;
+  if (rsi != null) {
+    if (rsi >= 70) items.push(['과열', `RSI ${Math.round(rsi)} — 과매수 구간, 조정 주의`]);
+    else if (rsi <= 30) items.push(['관심', `RSI ${Math.round(rsi)} — 과매도 구간, 반등 관찰`]);
+  }
+  const cross = (ind.macd || {}).cross;
+  if (cross === '골든') items.push(['매수신호', 'MACD 골든크로스 발생']);
+  else if (cross === '데드') items.push(['매도신호', 'MACD 데드크로스 발생']);
+  const ma = ind.ma || {};
+  if (ma.arrangement === '상승배열') items.push(['추세', '이동평균선 상승 배열 (단기>중기>장기)']);
+  else if (ma.arrangement === '하락배열') items.push(['추세', '이동평균선 하락 배열']);
+  if (!items.length) { el.innerHTML = '<div class="empty">특이 시그널 없음 (평온)</div>'; return; }
+  el.innerHTML = `<div class="news-list">${items.map(([t, b]) => `<div class="news-item"><span class="news-tag">${t}</span><span class="news-body">${b}</span></div>`).join('')}</div>`;
+}
+
+// AI 매매가이드 (크론이 a.ai_guide 채움)
+function renderAI(a) {
+  const el = document.getElementById('dpanel-ai');
+  const g = a.ai_guide;
+  if (!g) { el.innerHTML = '<div class="empty">AI가이드 생성 중 (크론 매일 갱신)</div>'; return; }
+  el.innerHTML = `<div class="ai-guide-box"><div class="ai-guide-signal ${g.signal === '매수' ? 'buy' : g.signal === '매도' ? 'sell' : 'hold'}">${g.signal || '—'}</div><div class="ai-guide-text">${g.text || ''}</div></div>`;
 }
 
 function renderMarket(a) {

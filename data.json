@@ -118,7 +118,12 @@
         },
         "updated": "2026-07-26 13:40 KST"
       },
-      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[삼성전자] 신호: 홀드\n현재가 249,500 대비 평단가 285,000 → -35,500원 (-12.5%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "코위버",
@@ -134,7 +139,12 @@
       "change_rate": null,
       "change": null,
       "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[코위버] 신호: 홀드\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "LG화학",
@@ -179,6 +189,11 @@
           "state": "과매수"
         },
         "updated": "2026-07-26 13:40 KST"
+      },
+      "ai_guide": {
+        "signal": "매도",
+        "text": "[LG화학] 신호: 매도\n근거: RSI 72 과매수.\n현재가 259,000 대비 평단가 264,000 → -5,000원 (-1.9%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
       }
     },
     {
@@ -226,7 +241,12 @@
         },
         "updated": "2026-07-26 13:33 KST"
       },
-      "indicators_stale": true
+      "indicators_stale": true,
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[한국첨단소재] 신호: 홀드\n현재가 67,600 대비 평단가 1,244 → +66,356원 (+5334.1%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "나이키B(미니스탁)",
@@ -275,7 +295,12 @@
         "updated": "2026-07-26 12:15 KST"
       },
       "indicators_stale": true,
-      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-"
+      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-",
+      "ai_guide": {
+        "signal": "매도",
+        "text": "[나이키B(미니스탁)] 신호: 매도\n근거: RSI 85 과매수.\n현재가 42 대비 평단가 836 → -794원 (-95.0%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "LG전자",
@@ -320,6 +345,11 @@
           "state": "과매수"
         },
         "updated": "2026-07-26 13:40 KST"
+      },
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[LG전자] 신호: 홀드\n현재가 169,200 대비 평단가 180,900 → -11,700원 (-6.5%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
       }
     },
     {
@@ -367,7 +397,12 @@
         },
         "updated": "2026-07-26 13:33 KST"
       },
-      "indicators_stale": true
+      "indicators_stale": true,
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[SK텔레콤] 신호: 홀드\n현재가 100,000 대비 평단가 89,400 → +10,600원 (+11.9%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "한온시스템",
@@ -412,6 +447,11 @@
           "state": "과매수"
         },
         "updated": "2026-07-26 13:40 KST"
+      },
+      "ai_guide": {
+        "signal": "매수",
+        "text": "[한온시스템] 신호: 매수\n근거: MACD 골든크로스.\n현재가 11,770 대비 평단가 3,565 → +8,205원 (+230.2%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
       }
     },
     {
@@ -429,7 +469,12 @@
       "change": null,
       "value": null,
       "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
-      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[대한광통신] 신호: 홀드\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "대우건설",
@@ -474,6 +519,11 @@
           "state": "중립"
         },
         "updated": "2026-07-26 13:40 KST"
+      },
+      "ai_guide": {
+        "signal": "매수",
+        "text": "[대우건설] 신호: 매수\n근거: RSI 20 과매도, MACD 골든크로스.\n현재가 15,300 대비 평단가 17,660 → -2,360원 (-13.4%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
       }
     },
     {
@@ -523,7 +573,12 @@
         "updated": "2026-07-26 12:15 KST"
       },
       "indicators_stale": true,
-      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-"
+      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[엔비디아] 신호: 홀드\n현재가 207 대비 평단가 201 → +5원 (+2.7%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "테슬라",
@@ -572,7 +627,12 @@
         "updated": "2026-07-26 12:15 KST"
       },
       "indicators_stale": true,
-      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-"
+      "chart_1h_error": "404 Client Error: Not Found for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotations/inquire-",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[테슬라] 신호: 홀드\n현재가 313 대비 평단가 404 → -91원 (-22.6%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "TIGER 미국나스닥100커버드콜",
@@ -588,7 +648,12 @@
       "change_rate": null,
       "change": null,
       "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[TIGER 미국나스닥100커버드콜] 신호: 홀드\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "SOL 미국S&P500",
@@ -604,7 +669,12 @@
       "change_rate": null,
       "change": null,
       "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[SOL 미국S&P500] 신호: 홀드\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "TIGER 미국S&P500",
@@ -620,7 +690,12 @@
       "change_rate": null,
       "change": null,
       "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[TIGER 미국S&P500] 신호: 홀드\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "TIGER 미국배당다우존스",
@@ -665,6 +740,11 @@
           "state": "과매수"
         },
         "updated": "2026-07-26 13:40 KST"
+      },
+      "ai_guide": {
+        "signal": "매수",
+        "text": "[TIGER 미국배당다우존스] 신호: 매수\n근거: MACD 골든크로스.\n현재가 29,240 대비 평단가 11,450 → +17,790원 (+155.4%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
       }
     },
     {
@@ -2151,7 +2231,12 @@
           "close": 2718000.0,
           "volume": 121.27963337736058
         }
-      ]
+      ],
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[이더리움] 신호: 홀드\n현재가 2,757,000 대비 평단가 2,644,700 → +112,300원 (+4.2%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "리플",
@@ -3637,7 +3722,12 @@
           "close": 1607.0,
           "volume": 78662.19868572
         }
-      ]
+      ],
+      "ai_guide": {
+        "signal": "홀드",
+        "text": "[리플] 신호: 홀드\n현재가 1,613 대비 평단가 1,647 → -34원 (-2.1%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     },
     {
       "name": "버추얼",
@@ -5123,7 +5213,13 @@
           "close": 925.0,
           "volume": 41938.89733441024
         }
-      ]
+      ],
+      "ai_guide": {
+        "signal": "매도",
+        "text": "[버추얼] 신호: 매도\n근거: RSI 77 과매수.\n현재가 861 대비 평단가 2,580 → -1,719원 (-66.6%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
+        "generated": "2026-07-26 14:10 KST"
+      }
     }
-  ]
+  ],
+  "ai_guide_updated": "2026-07-26 14:10 KST"
 }
