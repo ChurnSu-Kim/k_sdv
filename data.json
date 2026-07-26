@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 15:37 KST",
+  "updated": "2026-07-26 15:38 KST",
   "markets": {
     "KR": {
       "status": "CLOSED",
@@ -84,7 +84,7 @@
       "seed_price": 68058,
       "seed_as_of": "2026-07-10",
       "price": 249500.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -7.59,
       "change": -20500.0,
       "value": 2994000.0,
@@ -139,13 +139,22 @@
       "qty": 28,
       "seed_price": 7083,
       "seed_as_of": "2026-07-10",
+      "div": "Q",
       "price": null,
       "price_as_of": "2026-07-10",
       "change_rate": null,
       "change": null,
       "value": null,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
-      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
+      "fundamental": {
+        "market_cap": 0.0,
+        "per": 0.0,
+        "pbr": 0.0,
+        "dividend_yield": 0.0,
+        "high52": 0.0,
+        "low52": 0.0,
+        "listed_shares": 0.0,
+        "foreign_net_buy": 0.0
+      }
     },
     {
       "name": "LG화학",
@@ -157,7 +166,7 @@
       "seed_price": 349000,
       "seed_as_of": "2026-07-10",
       "price": 259000.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -4.6,
       "change": -12500.0,
       "value": 518000.0,
@@ -201,7 +210,8 @@
         },
         "updated": "2026-07-26 15:09 KST"
       },
-      "indicators_stale": true
+      "indicators_stale": true,
+      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
     },
     {
       "name": "한국첨단소재",
@@ -212,22 +222,22 @@
       "qty": 152,
       "seed_price": 2536,
       "seed_as_of": "2026-07-10",
+      "div": "Q",
       "price": 67600.0,
       "price_as_of": "2026-07-26 15:37 KST",
       "change_rate": -0.15,
       "change": -100.0,
       "value": 10275200.0,
       "fundamental": {
-        "market_cap": 22931.0,
-        "per": 13.89,
-        "pbr": 4.69,
+        "market_cap": 0.0,
+        "per": 0.0,
+        "pbr": 0.0,
         "dividend_yield": 0.0,
-        "high52": 118200.0,
-        "low52": 52500.0,
-        "listed_shares": 33921495.0,
-        "foreign_net_buy": -81776.0
+        "high52": 0.0,
+        "low52": 0.0,
+        "listed_shares": 0.0,
+        "foreign_net_buy": 0.0
       },
-      "indicators_error": "'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 58.6,
         "macd": {
@@ -270,7 +280,7 @@
       "seed_price": 152747,
       "seed_as_of": "2026-07-10",
       "price": 41.7,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": 1.73,
       "change": 0.71,
       "value": 1.0,
@@ -317,7 +327,7 @@
       "seed_price": 237000,
       "seed_as_of": "2026-07-10",
       "price": 169200.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -9.76,
       "change": -18300.0,
       "value": 169200.0,
@@ -331,7 +341,7 @@
         "listed_shares": 162884638.0,
         "foreign_net_buy": -329227.0
       },
-      "indicators_error": "'str' object has no attribute 'get'",
+      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 69.3,
         "macd": {
@@ -373,7 +383,7 @@
       "seed_price": 100300,
       "seed_as_of": "2026-07-10",
       "price": 100000.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": 0.5,
       "change": 500.0,
       "value": 200000.0,
@@ -428,22 +438,23 @@
       "qty": 48,
       "seed_price": 4852,
       "seed_as_of": "2026-07-10",
+      "div": "Q",
       "price": 11770.0,
       "price_as_of": "2026-07-26 15:37 KST",
       "change_rate": -3.52,
       "change": -430.0,
       "value": 564960.0,
       "fundamental": {
-        "market_cap": 3645.0,
-        "per": 16.98,
-        "pbr": 0.5,
+        "market_cap": 0.0,
+        "per": 0.0,
+        "pbr": 0.0,
         "dividend_yield": 0.0,
-        "high52": 18010.0,
-        "low52": 9530.0,
-        "listed_shares": 30966575.0,
-        "foreign_net_buy": 24890.0
+        "high52": 0.0,
+        "low52": 0.0,
+        "listed_shares": 0.0,
+        "foreign_net_buy": 0.0
       },
-      "indicators_error": "'str' object has no attribute 'get'",
+      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 59.8,
         "macd": {
@@ -484,6 +495,7 @@
       "qty": 56,
       "seed_price": 23080,
       "seed_as_of": "2026-07-10",
+      "div": "Q",
       "price": null,
       "price_as_of": "2026-07-10",
       "change_rate": null,
@@ -498,8 +510,7 @@
         "low52": 0.0,
         "listed_shares": 0.0,
         "foreign_net_buy": 0.0
-      },
-      "indicators_error": "'str' object has no attribute 'get'"
+      }
     },
     {
       "name": "대우건설",
@@ -510,22 +521,13 @@
       "qty": 10,
       "seed_price": 28800,
       "seed_as_of": "2026-07-10",
+      "div": "Q",
       "price": 15300.0,
       "price_as_of": "2026-07-26 15:37 KST",
       "change_rate": -6.36,
       "change": -1040.0,
       "value": 153000.0,
-      "fundamental": {
-        "market_cap": 62869.0,
-        "per": -6.97,
-        "pbr": 1.88,
-        "dividend_yield": 0.0,
-        "high52": 40350.0,
-        "low52": 3320.0,
-        "listed_shares": 410907638.0,
-        "foreign_net_buy": -316296.0
-      },
-      "indicators_error": "'str' object has no attribute 'get'",
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 19.8,
         "macd": {
@@ -555,7 +557,8 @@
         },
         "updated": "2026-07-26 15:09 KST"
       },
-      "indicators_stale": true
+      "indicators_stale": true,
+      "chart_1h_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
     },
     {
       "name": "엔비디아",
@@ -568,7 +571,7 @@
       "seed_price": 205.43,
       "seed_as_of": "2026-07-10",
       "price": 206.84,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -0.92,
       "change": 1.92,
       "value": 19.0,
@@ -616,7 +619,7 @@
       "seed_price": 224.37,
       "seed_as_of": "2026-07-10",
       "price": 313.03,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -2.08,
       "change": 6.66,
       "value": 5.0,
@@ -729,7 +732,7 @@
         "listed_shares": 0.0,
         "foreign_net_buy": 0.0
       },
-      "indicators_error": "'str' object has no attribute 'get'"
+      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati"
     },
     {
       "name": "TIGER 미국배당다우존스",
@@ -741,7 +744,7 @@
       "seed_price": 11700,
       "seed_as_of": "2026-07-10",
       "price": 29240.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": -2.94,
       "change": -885.0,
       "value": 29240.0,
@@ -755,7 +758,7 @@
         "listed_shares": 53400000.0,
         "foreign_net_buy": 48985.0
       },
-      "indicators_error": "'str' object has no attribute 'get'",
+      "indicators_error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 56.4,
         "macd": {
@@ -797,16 +800,16 @@
       "qty": 0.89067766,
       "seed_price": 3114421,
       "seed_as_of": "2026-07-10",
-      "price": 2752000.0,
-      "price_as_of": "2026-07-26 15:37 KST",
-      "change_rate": 1.33,
+      "price": 2751000.0,
+      "price_as_of": "2026-07-26 15:38 KST",
+      "change_rate": 1.29,
       "change": null,
-      "value": 2451145.0,
+      "value": 2450254.0,
       "indicators": {
         "rsi14": 55.9,
         "macd": {
           "macd": 240578.62,
-          "signal": 319789.65297647566,
+          "signal": 319789.65310521185,
           "hist": -79211.03,
           "cross": "없음"
         },
@@ -829,7 +832,7 @@
           "d": 27.3,
           "state": "과매도"
         },
-        "updated": "2026-07-26 15:37 KST"
+        "updated": "2026-07-26 15:38 KST"
       },
       "chart_1h": [
         {
@@ -2283,16 +2286,16 @@
       "qty": 579,
       "seed_price": 2068,
       "seed_as_of": "2026-07-10",
-      "price": 1604.0,
-      "price_as_of": "2026-07-26 15:37 KST",
+      "price": 1605.0,
+      "price_as_of": "2026-07-26 15:38 KST",
       "change_rate": 0.69,
       "change": null,
-      "value": 928716.0,
+      "value": 929295.0,
       "indicators": {
         "rsi14": 67.1,
         "macd": {
           "macd": 168.44,
-          "signal": 188.4514809816584,
+          "signal": 188.45148098165453,
           "hist": -20.01,
           "cross": "없음"
         },
@@ -2315,7 +2318,7 @@
           "d": 71.4,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:37 KST"
+        "updated": "2026-07-26 15:38 KST"
       },
       "chart_1h": [
         {
@@ -3769,16 +3772,16 @@
       "qty": 29,
       "seed_price": 2580,
       "seed_as_of": "2026-07-10",
-      "price": 858.0,
-      "price_as_of": "2026-07-26 15:37 KST",
-      "change_rate": 1.42,
+      "price": 860.0,
+      "price_as_of": "2026-07-26 15:38 KST",
+      "change_rate": 1.53,
       "change": null,
-      "value": 24882.0,
+      "value": 24940.0,
       "indicators": {
         "rsi14": 77.4,
         "macd": {
           "macd": 134.48,
-          "signal": 129.98120767937144,
+          "signal": 129.98120767936354,
           "hist": 4.5,
           "cross": "없음"
         },
@@ -3801,7 +3804,7 @@
           "d": 84.3,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:37 KST"
+        "updated": "2026-07-26 15:38 KST"
       },
       "chart_1h": [
         {
