@@ -195,7 +195,7 @@ function renderDrawer(a) {
   const avg = a.avg_price != null ? a.avg_price : a.seed_price;
   const pnl = a.total_pnl != null ? a.total_pnl : ((a.price || 0) - (avg || 0)) * (a.qty || 0);
   const pnlPct = a.total_pnl_pct != null ? a.total_pnl_pct : (avg ? (a.price - avg) / avg * 100 : 0);
-  const evalAmt = a.value != null ? a.value : (a.price || 0) * (a.qty || 0);
+  const evalAmt = a.value != null ? a.value : (a.price || avg || 0) * (a.qty || 0);
   const pnCls = pnl >= 0 ? 'up' : 'down';
   const cost = (avg || 0) * (a.qty || 0);
   document.getElementById('pnlHeader').innerHTML = `
@@ -210,7 +210,6 @@ function renderDrawer(a) {
   renderTech(a);
   renderFund(a);
   renderMarket(a);
-  renderGauge(a);
   renderNews(a);
   renderAI(a);
   renderPnl(a, avg, pnl, pnlPct, evalAmt, cost);
@@ -236,8 +235,8 @@ function renderTech(a) {
   const cards = [];
   cards.push(indicatorCard('RSI(14)', ind.rsi14 != null ? ind.rsi14 : '—',
     ind.rsi14 >= 70 ? 'over' : ind.rsi14 <= 30 ? 'under' : ''));
-  cards.push(indicatorCard('MACD', macd.cross ? macd.cross : '—',
-    macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : ''));
+  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '없음') ? macd.cross : (macd.trend || '—'),
+    macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : '')));
   cards.push(indicatorCard('이동평균 배열', ma.arrangement || '—',
     ma.arrangement === '정배열' ? 'gold' : ma.arrangement === '역배열' ? 'dead' : ''));
   cards.push(indicatorCard('MA5 / MA20 / MA60',
@@ -248,7 +247,34 @@ function renderTech(a) {
     stoch.state === '과매수' ? 'over' : stoch.state === '과매도' ? 'under' : ''));
   document.getElementById('dpanel-tech').innerHTML =
     `<div class="ind-grid">${cards.join('')}</div>
-     <div class="ind-note">기준시각: ${ind.updated || a.price_as_of || '—'} · KIS/빗썸 무료 시세 기반</div>`;
+     <div class="ind-note">기준시각: ${ind.updated || a.price_as_of || '—'} · KIS/빗썸 무료 시세 기반</div>
+     <div class="gauge-subtitle">게이지 차트</div>
+     <div id="tech-gauge-slot"></div>`;
+  // 기술적지표 + 게이지 통합: 같은 데이터를 게이지로도 표시
+  renderGaugeInto('tech-gauge-slot', a);
+}
+
+// 게이지를 지정한 컨테이너에 렌더 (tech 패널 통합용)
+function renderGaugeInto(slotId, a) {
+  const el = document.getElementById(slotId);
+  if (!el) return;
+  const ind = a.indicators || {};
+  if (!Object.keys(ind).length) { el.innerHTML = '<div class="empty">기술적지표 데이터 없음</div>'; return; }
+  const rsi = ind.rsi14;
+  const bb = ind.bollinger || {};
+  const st = ind.stochastic || {};
+  const wrap = document.createElement('div'); wrap.className = 'gauge-grid';
+  if (rsi != null) wrap.appendChild(gaugeCanvas('g_rsi', rsi, 0, 100, 'RSI', [
+    { from: 0, to: 30, color: '#2bb46e' }, { from: 30, to: 70, color: '#4f7cff' }, { from: 70, to: 100, color: '#e23b3b' }
+  ]));
+  if (bb.position != null) wrap.appendChild(gaugeCanvas('g_bb', bb.position, 0, 100, '볼린저 %B', [
+    { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
+  ]));
+  if (st.k != null) wrap.appendChild(gaugeCanvas('g_st', st.k, 0, 100, '스토캐스틱 %K', [
+    { from: 0, to: 20, color: '#2bb46e' }, { from: 20, to: 80, color: '#4f7cff' }, { from: 80, to: 100, color: '#e23b3b' }
+  ]));
+  if (!wrap.children.length) { el.innerHTML = '<div class="empty">게이지 표시할 지표 없음</div>'; return; }
+  el.innerHTML = ''; el.appendChild(wrap);
 }
 
 function renderFund(a) {
@@ -370,8 +396,7 @@ function renderPnl(a, avg, pnl, pnlPct, evalAmt, cost) {
     ['비중', a.weight_pct != null ? a.weight_pct + '%' : '—'],
   ];
   document.getElementById('dpanel-pnl').innerHTML =
-    `<div class="pnl-table">${rows.map(([k, v]) => `<div class="pnl-row"><span class="lbl">${k}</span><span class="val">${v != null ? fmt(v) : '—'}</span></div>`).join('')}</div>
-     <div class="pnl-actions"><button class="btn-act buy">매수</button><button class="btn-act buy">추가매수</button><button class="btn-act sell">일부매도</button><button class="btn-act danger">전량매도</button></div>`;
+    `<div class="pnl-table">${rows.map(([k, v]) => `<div class="pnl-row"><span class="lbl">${k}</span><span class="val">${v != null ? fmt(v) : '—'}</span></div>`).join('')}</div>`;
 }
 
 // 1시간봉 캔들 차트 (순수 canvas, 이평선+평단가선 plot)
