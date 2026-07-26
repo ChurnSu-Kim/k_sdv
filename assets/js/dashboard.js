@@ -139,7 +139,7 @@ function renderPortfolio(data) {
     el.querySelector('.kpi-eval').textContent = fmt(st.evalAmt) + '원';
     el.querySelector('.kpi-pnl').textContent = (st.pnl >= 0 ? '+' : '') + fmt(st.pnl) + '원';
     el.querySelector('.kpi-pnlpct').textContent = (st.pnl >= 0 ? '+' : '') + fmt(Math.round(st.pnlPct)) + '%';
-    const pe = el.querySelector('.kpi-pl-cls');
+    const pe = el.querySelector('.kpi-pnlpct');
     pe.className = 'kpi-pnlpct ' + (st.pnl >= 0 ? 'up' : 'down');
     if (mktKey) {
       const b = el.querySelector('.mkt-badge-slot');
@@ -439,3 +439,6 @@ document.querySelectorAll('.dtab').forEach(t => {
     document.getElementById('dpanel-' + key).classList.add('active');
   });
 });
+
+// 최초 데이터 로드
+loadPortfolio();
