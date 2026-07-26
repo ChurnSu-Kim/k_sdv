@@ -235,16 +235,20 @@ function renderTech(a) {
 function renderFund(a) {
   const f = a.fundamental || {};
   if (!Object.keys(f).length) {
-    document.getElementById('dpanel-fund').innerHTML = '<div class="empty">펀더멘털 데이터 없음 (수집 연동 시 표시)</div>';
+    document.getElementById('dpanel-fund').innerHTML = '<div class="empty">펀더멘털 데이터 없음 (평일 장 중 수집)</div>';
     return;
   }
+  const w = ccy(a);
   const rows = [
-    ['PER', f.per], ['PBR', f.pbr], ['ROE', f.roe],
-    ['부채비율', f.debt_ratio], ['배당수익률', f.div_yield],
-    ['시가총액', f.market_cap], ['52주 고가', f.high52], ['52주 저가', f.low52],
+    ['시가총액', f.market_cap != null ? fmt(f.market_cap) + '억' : '—'],
+    ['PER', f.per != null ? f.per : '—'],
+    ['PBR', f.pbr != null ? f.pbr : '—'],
+    ['배당수익률', f.dividend_yield != null ? f.dividend_yield + '%' : '—'],
+    ['52주 고가', f.high52 != null ? w + fmt(f.high52) : '—'],
+    ['52주 저가', f.low52 != null ? w + fmt(f.low52) : '—'],
   ];
   document.getElementById('dpanel-fund').innerHTML =
-    `<div class="fund-grid">${rows.map(([k, v]) => `<div class="fund-cell"><span class="lbl">${k}</span><span class="val">${v != null ? fmt(v) : '—'}</span></div>`).join('')}</div>`;
+    `<div class="fund-grid">${rows.map(([k, v]) => `<div class="fund-cell"><span class="lbl">${k}</span><span class="val">${v}</span></div>`).join('')}</div>`;
 }
 
 function renderMarket(a) {
