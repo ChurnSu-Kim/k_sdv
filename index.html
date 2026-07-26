@@ -25,10 +25,11 @@
 
   <!-- KPI -->
   <div class="kpi-row" id="kpiRow">
-    <div class="kpi"><div class="label">총 평가금액</div><div class="value" id="kpiTotal">—</div><div class="delta" id="kpiTotalD">&nbsp;</div></div>
-    <div class="kpi"><div class="label">총 손익</div><div class="value" id="kpiPl">—</div><div class="delta" id="kpiPlD">&nbsp;</div></div>
-    <div class="kpi"><div class="label">한국장</div><div class="value" id="kpiKr">—</div></div>
-    <div class="kpi"><div class="label">암호화폐</div><div class="value" id="kpiCrypto">—</div></div>
+    <div class="kpi" id="kpiTotal"><div class="label">총 평가금액</div><div class="kpi-eval value">—</div><div class="kpi-pnl up">—</div><div class="kpi-pnlpct up">—</div></div>
+    <div class="kpi" id="kpiKr"><div class="label">한국장</div><div class="mkt-badge-slot"></div><div class="kpi-eval value">—</div><div class="kpi-pnl up">—</div><div class="kpi-pnlpct up">—</div></div>
+    <div class="kpi" id="kpiUs"><div class="label">해외장</div><div class="mkt-badge-slot"></div><div class="kpi-eval value">—</div><div class="kpi-pnl up">—</div><div class="kpi-pnlpct up">—</div></div>
+    <div class="kpi" id="kpiCrypto"><div class="label">암호화폐</div><div class="mkt-badge-slot"></div><div class="kpi-eval value">—</div><div class="kpi-pnl up">—</div><div class="kpi-pnlpct up">—</div></div>
+    <div class="kpi" id="kpiEtf"><div class="label">ETF</div><div class="kpi-eval value">—</div><div class="kpi-pnl up">—</div><div class="kpi-pnlpct up">—</div></div>
   </div>
 
   <!-- Tabs -->
@@ -80,9 +81,10 @@
   <!-- AI 전망 배너 (Block B) -->
   <div class="ai-banner" id="aiBanner" style="display:none"></div>
 
-  <!-- 탭 (4대 분석) -->
+  <!-- 탭 (5대 분석) -->
   <div class="detail-tabs">
     <div class="dtab active" data-dtab="tech">📈 기술적지표</div>
+    <div class="dtab" data-dtab="chart">📉 1시간봉 차트</div>
     <div class="dtab" data-dtab="fund">🏦 펀더멘털</div>
     <div class="dtab" data-dtab="market">🌐 시황</div>
     <div class="dtab" data-dtab="pnl">💰 손익</div>
@@ -90,6 +92,7 @@
 
   <div class="detail-body">
     <div class="dpanel active" id="dpanel-tech"></div>
+    <div class="dpanel" id="dpanel-chart"></div>
     <div class="dpanel" id="dpanel-fund"></div>
     <div class="dpanel" id="dpanel-market"></div>
     <div class="dpanel" id="dpanel-pnl"></div>

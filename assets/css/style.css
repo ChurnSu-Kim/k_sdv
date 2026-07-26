@@ -255,7 +255,38 @@ body {
 .asset-card.clickable { cursor: pointer; }
 .empty { color: var(--text-muted); font-size: 13px; padding: 20px 4px; }
 
+/* Order_001 개선: RSI/MACD 색상, KPI 구조, stale 경고, 차트 */
+.chip.rsi-over { color: #e23b3b; font-weight: 800; border-color: #e23b3b; }
+.chip.rsi-under { color: #2bb46e; font-weight: 800; border-color: #2bb46e; }
+.chip.rsi-blue { color: #2b6cf0; font-weight: 700; }
+.chip.rsi-purple { color: #8b5cf6; font-weight: 700; }
+.chip.rsi-white { color: #ffffff; font-weight: 700; }
+.chip.macd-gold { color: #2bb46e; font-weight: 800; border-color: #2bb46e; }
+.chip.macd-dead { color: #e23b3b; font-weight: 800; border-color: #e23b3b; }
+
+.kpi-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 16px; }
+.kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); }
+.kpi .label { font-size: 13px; color: var(--text-muted); margin-bottom: 6px; }
+.kpi-eval { font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.kpi-pnl { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.kpi-pnlpct { font-size: 13px; font-variant-numeric: tabular-nums; }
+.kpi-pnl.up, .kpi-pnlpct.up { color: var(--up); }
+.kpi-pnl.down, .kpi-pnlpct.down { color: var(--down); }
+.mkt-badge-slot { min-height: 18px; margin-bottom: 4px; }
+.mkt-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 700; }
+.mkt-badge.open { background: #e8f7ee; color: #1f9d55; }
+.mkt-badge.closed { background: #f0f0f3; color: #8a8f9c; }
+
+.price-sub { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+.asof { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+.asof.stale { color: #e23b3b; font-weight: 800; }
+
+#dpanel-chart canvas { width: 100%; height: auto; background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; }
+.chart-legend { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
+.chart-legend b.r { color: #2f6bff; } .chart-legend b.g { color: #e23c3c; } .chart-legend b.y { color: #ffae00; }
+
 @media (max-width: 760px) {
   .drawer { width: 100vw; max-width: 100vw; }
   .ind-grid, .fund-grid, .pnl-grid { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: repeat(2, 1fr); }
 }
