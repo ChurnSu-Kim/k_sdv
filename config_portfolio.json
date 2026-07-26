@@ -1,0 +1,26 @@
+{
+  "updated": null,
+  "source": "KIS Open API + Bithumb Public API",
+  "note": "실제 보유종목 동기화 (data/보유주식_20260709.md 기준, 2026-07-10 스냅샷). 수량/평단가는 회장님 실계좌 값.",
+  "assets": [
+    {"name":"삼성전자","code":"005930","market":"KR","type":"STOCK","broker":"한투","qty":12,"seed_price":68058,"seed_as_of":"2026-07-10"},
+    {"name":"코위버","code":"036500","market":"KR","type":"STOCK","broker":"한투+카카오","qty":28,"seed_price":7083,"seed_as_of":"2026-07-10"},
+    {"name":"LG화학","code":"051910","market":"KR","type":"STOCK","broker":"한투","qty":2,"seed_price":349000,"seed_as_of":"2026-07-10"},
+    {"name":"한국첨단소재","code":"071970","market":"KR","type":"STOCK","broker":"한투+카카오","qty":152,"seed_price":2536,"seed_as_of":"2026-07-10"},
+    {"name":"나이키B(미니스탁)","code":"NKE","exch":"NYS","market":"US","type":"STOCK","broker":"한투","qty":0.012956,"seed_price":152747,"seed_as_of":"2026-07-10"},
+    {"name":"LG전자","code":"066570","market":"KR","type":"STOCK","broker":"카카오","qty":1,"seed_price":237000,"seed_as_of":"2026-07-10"},
+    {"name":"SK텔레콤","code":"017670","market":"KR","type":"STOCK","broker":"카카오","qty":2,"seed_price":100300,"seed_as_of":"2026-07-10"},
+    {"name":"한온시스템","code":"069080","market":"KR","type":"STOCK","broker":"카카오","qty":48,"seed_price":4852,"seed_as_of":"2026-07-10"},
+    {"name":"대한광통신","code":"059540","market":"KR","type":"STOCK","broker":"키움","qty":56,"seed_price":23080,"seed_as_of":"2026-07-10"},
+    {"name":"대우건설","code":"047040","market":"KR","type":"STOCK","broker":"키움","qty":10,"seed_price":28800,"seed_as_of":"2026-07-10"},
+    {"name":"엔비디아","code":"NVDA","exch":"NAS","market":"US","type":"STOCK","broker":"카카오","qty":0.094,"seed_price":205.43,"seed_as_of":"2026-07-10"},
+    {"name":"테슬라","code":"TSLA","exch":"NAS","market":"US","type":"STOCK","broker":"카카오","qty":0.0162,"seed_price":224.37,"seed_as_of":"2026-07-10"},
+    {"name":"TIGER 미국나스닥100커버드콜","code":"436960","market":"KR","type":"ETF","broker":"한투","qty":100,"seed_price":9700,"seed_as_of":"2026-07-10"},
+    {"name":"SOL 미국S&P500","code":"433340","market":"KR","type":"ETF","broker":"한투","qty":21,"seed_price":23830,"seed_as_of":"2026-07-10"},
+    {"name":"TIGER 미국S&P500","code":"460920","market":"KR","type":"ETF","broker":"한투","qty":19,"seed_price":13042,"seed_as_of":"2026-07-10"},
+    {"name":"TIGER 미국배당다우존스","code":"466920","market":"KR","type":"ETF","broker":"한투","qty":1,"seed_price":11700,"seed_as_of":"2026-07-10"},
+    {"name":"이더리움","coin":"ETH","market":"CRYPTO","type":"COIN","broker":"빗썸","qty":0.89067766,"seed_price":3114421,"seed_as_of":"2026-07-10"},
+    {"name":"리플","coin":"XRP","market":"CRYPTO","type":"COIN","broker":"빗썴","qty":579,"seed_price":2068,"seed_as_of":"2026-07-10"},
+    {"name":"버추얼","coin":"VIRTUAL","market":"CRYPTO","type":"COIN","broker":"빗썴","qty":29,"seed_price":2580,"seed_as_of":"2026-07-10"}
+  ]
+}
