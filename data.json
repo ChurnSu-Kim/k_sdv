@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26 20:23 KST",
+  "updated": "2026-07-26 20:27 KST",
   "markets": {
     "KR": {
       "status": "CLOSED",
@@ -84,7 +84,7 @@
       "seed_price": 68058,
       "seed_as_of": "2026-07-10",
       "price": 249500.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -7.59,
       "change": -20500.0,
       "value": 2994000.0,
@@ -98,14 +98,14 @@
         "listed_shares": 5846278608.0,
         "foreign_net_buy": -2872978.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 56.2,
         "macd": {
-          "macd": -3492.91,
-          "signal": -7101.100953093634,
-          "hist": 3608.19,
-          "cross": "없음"
+          "macd": -3379.5,
+          "signal": -6934.355185199738,
+          "hist": 3554.86,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 192720.0,
@@ -126,9 +126,9 @@
           "d": 54.4,
           "state": "과매수"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "코위버",
@@ -144,17 +144,38 @@
       "change_rate": -3.46,
       "change": -175.0,
       "value": 136780.0,
-      "fundamental": {
-        "market_cap": 479.0,
-        "per": 13.8,
-        "pbr": 0.28,
-        "dividend_yield": 0.0,
-        "high52": 14550.0,
-        "low52": 4405.0,
-        "listed_shares": 9796800.0,
-        "foreign_net_buy": -6673.0
-      },
-      "indicators_error": " | daily:'str' object has no attribute 'get'"
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "indicators": {
+        "rsi14": 40.7,
+        "macd": {
+          "macd": -851.88,
+          "signal": -876.2628490736226,
+          "hist": 24.38,
+          "cross": "골든",
+          "trend": "상승"
+        },
+        "ma": {
+          "ma5": 4958.0,
+          "ma20": 5878.25,
+          "ma60": 8440.42,
+          "ma120": null,
+          "arrangement": "역배열"
+        },
+        "bollinger": {
+          "upper": 7435.52,
+          "mid": 5878.25,
+          "lower": 4320.98,
+          "width_pct": 53.0,
+          "position": "하단근접"
+        },
+        "stochastic": {
+          "k": 41.3,
+          "d": 22.6,
+          "state": "중립"
+        },
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "LG화학",
@@ -166,7 +187,7 @@
       "seed_price": 349000,
       "seed_as_of": "2026-07-10",
       "price": 259000.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -4.6,
       "change": -12500.0,
       "value": 518000.0,
@@ -180,14 +201,14 @@
         "listed_shares": 70592343.0,
         "foreign_net_buy": 29288.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 71.8,
         "macd": {
-          "macd": 5815.06,
-          "signal": -5508.48962106625,
-          "hist": 11323.55,
-          "cross": "없음"
+          "macd": 5932.79,
+          "signal": -5335.395858678272,
+          "hist": 11268.19,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 347300.0,
@@ -208,9 +229,9 @@
           "d": 82.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "한국첨단소재",
@@ -279,18 +300,18 @@
       "seed_price": 152747,
       "seed_as_of": "2026-07-10",
       "price": 41.7,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": 1.73,
       "change": 0.71,
       "value": 0.54,
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 84.6,
         "macd": {
-          "macd": 2.91,
-          "signal": 2.650537471329698,
-          "hist": 0.26,
-          "cross": "없음"
+          "macd": 2.93,
+          "signal": 2.6776276457895793,
+          "hist": 0.25,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 57.92,
@@ -311,9 +332,9 @@
           "d": 100.0,
           "state": "과매수"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "LG전자",
@@ -325,7 +346,7 @@
       "seed_price": 237000,
       "seed_as_of": "2026-07-10",
       "price": 169200.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -9.76,
       "change": -18300.0,
       "value": 169200.0,
@@ -339,14 +360,14 @@
         "listed_shares": 162884638.0,
         "foreign_net_buy": -329227.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 69.3,
         "macd": {
-          "macd": -230.09,
-          "signal": -4093.2869878530396,
-          "hist": 3863.2,
-          "cross": "없음"
+          "macd": -153.18,
+          "signal": -3980.2066059988174,
+          "hist": 3827.03,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 123140.0,
@@ -367,9 +388,9 @@
           "d": 66.7,
           "state": "과매수"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "SK텔레콤",
@@ -381,7 +402,7 @@
       "seed_price": 100300,
       "seed_as_of": "2026-07-10",
       "price": 100000.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": 0.5,
       "change": 500.0,
       "value": 200000.0,
@@ -395,14 +416,14 @@
         "listed_shares": 214790053.0,
         "foreign_net_buy": -1157608.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 51.5,
         "macd": {
-          "macd": -2544.64,
-          "signal": -3316.877884334275,
-          "hist": 772.24,
-          "cross": "없음"
+          "macd": -2499.18,
+          "signal": -3250.0452464832024,
+          "hist": 750.87,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 76540.0,
@@ -423,9 +444,9 @@
           "d": 53.2,
           "state": "과매수"
         },
-        "updated": "2026-07-26 14:45 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "한온시스템",
@@ -498,7 +519,16 @@
       "change_rate": null,
       "change": null,
       "value": 1292480,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "fundamental": {
+        "market_cap": 0.0,
+        "per": 0.0,
+        "pbr": 0.0,
+        "dividend_yield": 0.0,
+        "high52": 0.0,
+        "low52": 0.0,
+        "listed_shares": 0.0,
+        "foreign_net_buy": 0.0
+      },
       "value_source": "seed_fallback"
     },
     {
@@ -516,7 +546,16 @@
       "change_rate": -6.36,
       "change": -1040.0,
       "value": 153000.0,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
+      "fundamental": {
+        "market_cap": 0.0,
+        "per": 0.0,
+        "pbr": 0.0,
+        "dividend_yield": 0.0,
+        "high52": 0.0,
+        "low52": 0.0,
+        "listed_shares": 0.0,
+        "foreign_net_buy": 0.0
+      },
       "indicators": {
         "rsi14": 19.8,
         "macd": {
@@ -559,18 +598,18 @@
       "seed_price": 205.43,
       "seed_as_of": "2026-07-10",
       "price": 206.84,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -0.92,
       "change": 1.92,
       "value": 19.44,
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 55.6,
         "macd": {
-          "macd": -1.58,
-          "signal": -2.7218122451530453,
-          "hist": 1.14,
-          "cross": "없음"
+          "macd": -1.49,
+          "signal": -2.584305730899556,
+          "hist": 1.09,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 181.38,
@@ -591,9 +630,9 @@
           "d": 70.8,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "테슬라",
@@ -606,19 +645,18 @@
       "seed_price": 224.37,
       "seed_as_of": "2026-07-10",
       "price": 313.03,
-      "price_as_of": "2026-07-26 16:38 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -2.08,
       "change": 6.66,
       "value": 5.07,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotati",
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
         "rsi14": 55.6,
         "macd": {
-          "macd": 6.18,
-          "signal": 4.912135477204454,
-          "hist": 1.27,
-          "cross": "없음"
+          "macd": 6.32,
+          "signal": 5.119837842883349,
+          "hist": 1.2,
+          "cross": "없음",
+          "trend": "상승"
         },
         "ma": {
           "ma5": 399.87,
@@ -639,9 +677,9 @@
           "d": 83.7,
           "state": "중립"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "TIGER 미국나스닥100커버드콜",
@@ -653,7 +691,7 @@
       "seed_price": 9700,
       "seed_as_of": "2026-07-10",
       "price": 11025.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -1.87,
       "change": -210.0,
       "value": 1102500.0,
@@ -667,7 +705,37 @@
         "listed_shares": 197750000.0,
         "foreign_net_buy": 1120319.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'"
+      "indicators": {
+        "rsi14": 38.9,
+        "macd": {
+          "macd": -99.38,
+          "signal": -114.57589200025502,
+          "hist": 15.2,
+          "cross": "없음",
+          "trend": "상승"
+        },
+        "ma": {
+          "ma5": 9733.2,
+          "ma20": 9767.55,
+          "ma60": 10364.68,
+          "ma120": null,
+          "arrangement": "역배열"
+        },
+        "bollinger": {
+          "upper": 9940.08,
+          "mid": 9767.55,
+          "lower": 9595.02,
+          "width_pct": 3.5,
+          "position": "하단근접"
+        },
+        "stochastic": {
+          "k": 0.0,
+          "d": 4.4,
+          "state": "과매도"
+        },
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "SOL 미국S&P500",
@@ -679,12 +747,51 @@
       "seed_price": 23830,
       "seed_as_of": "2026-07-10",
       "price": 22485.0,
-      "price_as_of": "2026-07-26 15:47 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -1.19,
       "change": -270.0,
       "value": 472185.0,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
-      "indicators_error": " | daily:'str' object has no attribute 'get'"
+      "fundamental": {
+        "market_cap": 2856.0,
+        "per": 0.0,
+        "pbr": 0.0,
+        "dividend_yield": 0.0,
+        "high52": 24210.0,
+        "low52": 17950.0,
+        "listed_shares": 12700000.0,
+        "foreign_net_buy": -1056.0
+      },
+      "indicators": {
+        "rsi14": 48.5,
+        "macd": {
+          "macd": -85.36,
+          "signal": -134.4673676894543,
+          "hist": 49.11,
+          "cross": "없음",
+          "trend": "상승"
+        },
+        "ma": {
+          "ma5": 20696.6,
+          "ma20": 20566.55,
+          "ma60": 21389.02,
+          "ma120": null,
+          "arrangement": "혼조"
+        },
+        "bollinger": {
+          "upper": 20860.51,
+          "mid": 20566.55,
+          "lower": 20272.59,
+          "width_pct": 2.9,
+          "position": "하단근접"
+        },
+        "stochastic": {
+          "k": 0.0,
+          "d": 38.3,
+          "state": "과매도"
+        },
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "TIGER 미국S&P500",
@@ -696,7 +803,7 @@
       "seed_price": 13042,
       "seed_as_of": "2026-07-10",
       "price": 26965.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": -1.15,
       "change": -315.0,
       "value": 512335.0,
@@ -710,7 +817,37 @@
         "listed_shares": 733350000.0,
         "foreign_net_buy": 105936.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'"
+      "indicators": {
+        "rsi14": 48.3,
+        "macd": {
+          "macd": -108.64,
+          "signal": -166.61587645345134,
+          "hist": 57.98,
+          "cross": "없음",
+          "trend": "상승"
+        },
+        "ma": {
+          "ma5": 24771.8,
+          "ma20": 24622.85,
+          "ma60": 25626.82,
+          "ma120": null,
+          "arrangement": "혼조"
+        },
+        "bollinger": {
+          "upper": 24972.15,
+          "mid": 24622.85,
+          "lower": 24273.55,
+          "width_pct": 2.8,
+          "position": "하단근접"
+        },
+        "stochastic": {
+          "k": 0.0,
+          "d": 35.9,
+          "state": "과매도"
+        },
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "TIGER 미국배당다우존스",
@@ -722,7 +859,7 @@
       "seed_price": 11700,
       "seed_as_of": "2026-07-10",
       "price": 10270.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": 0.0,
       "change": 0.0,
       "value": 10270.0,
@@ -736,37 +873,37 @@
         "listed_shares": 26300000.0,
         "foreign_net_buy": -2356.0
       },
-      "indicators_error": " | daily:'str' object has no attribute 'get'",
       "indicators": {
-        "rsi14": 56.4,
+        "rsi14": 38.0,
         "macd": {
-          "macd": 193.63,
-          "signal": 65.48283323154118,
-          "hist": 128.15,
-          "cross": "골든"
+          "macd": -28.64,
+          "signal": -24.129651304008416,
+          "hist": -4.51,
+          "cross": "데드",
+          "trend": "하락"
         },
         "ma": {
-          "ma5": 35477.2,
-          "ma20": 35715.1,
-          "ma60": 36872.38,
+          "ma5": 9687.4,
+          "ma20": 9693.8,
+          "ma60": 9810.43,
           "ma120": null,
           "arrangement": "역배열"
         },
         "bollinger": {
-          "upper": 39457.55,
-          "mid": 35715.1,
-          "lower": 31972.65,
-          "width_pct": 21.0,
-          "position": "상단근접"
+          "upper": 9829.68,
+          "mid": 9693.8,
+          "lower": 9557.92,
+          "width_pct": 2.8,
+          "position": "하단돌파"
         },
         "stochastic": {
-          "k": 100.0,
-          "d": 62.1,
-          "state": "과매수"
+          "k": 0.0,
+          "d": 59.7,
+          "state": "과매도"
         },
-        "updated": "2026-07-26 15:09 KST"
-      },
-      "indicators_stale": true
+        "updated": "2026-07-26 20:27 KST",
+        "basis": "1d"
+      }
     },
     {
       "name": "이더리움",
@@ -778,8 +915,8 @@
       "seed_price": 3114421,
       "seed_as_of": "2026-07-10",
       "price": 2757000.0,
-      "price_as_of": "2026-07-26 20:23 KST",
-      "change_rate": 1.29,
+      "price_as_of": "2026-07-26 20:27 KST",
+      "change_rate": 1.36,
       "change": null,
       "value": 2455598.0,
       "chart_1h": [
@@ -2252,7 +2389,7 @@
           "d": 83.3,
           "state": "과매수"
         },
-        "updated": "2026-07-26 20:23 KST",
+        "updated": "2026-07-26 20:27 KST",
         "basis": "1h"
       }
     },
@@ -2265,11 +2402,11 @@
       "qty": 579,
       "seed_price": 2068,
       "seed_as_of": "2026-07-10",
-      "price": 1608.0,
-      "price_as_of": "2026-07-26 20:23 KST",
+      "price": 1609.0,
+      "price_as_of": "2026-07-26 20:27 KST",
       "change_rate": 0.69,
       "change": null,
-      "value": 931032.0,
+      "value": 931611.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -3713,34 +3850,34 @@
         }
       ],
       "indicators": {
-        "rsi14": 50.0,
+        "rsi14": 52.9,
         "macd": {
-          "macd": 0.96,
-          "signal": 1.2205316652727731,
-          "hist": -0.26,
+          "macd": 1.04,
+          "signal": 1.2365316652727731,
+          "hist": -0.2,
           "cross": "없음",
           "trend": "하락"
         },
         "ma": {
-          "ma5": 1607.4,
-          "ma20": 1609.05,
-          "ma60": 1605.13,
+          "ma5": 1607.6,
+          "ma20": 1609.1,
+          "ma60": 1605.15,
           "ma120": 1631.88,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 1613.59,
-          "mid": 1609.05,
-          "lower": 1604.51,
+          "upper": 1613.61,
+          "mid": 1609.1,
+          "lower": 1604.59,
           "width_pct": 0.6,
           "position": "하단근접"
         },
         "stochastic": {
-          "k": 33.3,
-          "d": 33.3,
+          "k": 50.0,
+          "d": 38.9,
           "state": "중립"
         },
-        "updated": "2026-07-26 20:23 KST",
+        "updated": "2026-07-26 20:27 KST",
         "basis": "1h"
       }
     },
@@ -3753,11 +3890,11 @@
       "qty": 29,
       "seed_price": 2580,
       "seed_as_of": "2026-07-10",
-      "price": 850.0,
-      "price_as_of": "2026-07-26 20:23 KST",
-      "change_rate": -0.12,
+      "price": 849.0,
+      "price_as_of": "2026-07-26 20:27 KST",
+      "change_rate": -0.35,
       "change": null,
-      "value": 24650.0,
+      "value": 24621.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -5201,34 +5338,34 @@
         }
       ],
       "indicators": {
-        "rsi14": 44.4,
+        "rsi14": 43.5,
         "macd": {
-          "macd": -1.59,
-          "signal": -1.143522233113171,
-          "hist": -0.45,
+          "macd": -1.67,
+          "signal": -1.1595222331131707,
+          "hist": -0.51,
           "cross": "없음",
           "trend": "하락"
         },
         "ma": {
-          "ma5": 851.6,
-          "ma20": 855.45,
-          "ma60": 862.32,
-          "ma120": 897.53,
+          "ma5": 851.4,
+          "ma20": 855.4,
+          "ma60": 862.3,
+          "ma120": 897.52,
           "arrangement": "역배열"
         },
         "bollinger": {
-          "upper": 864.16,
-          "mid": 855.45,
-          "lower": 846.74,
-          "width_pct": 2.0,
+          "upper": 864.24,
+          "mid": 855.4,
+          "lower": 846.56,
+          "width_pct": 2.1,
           "position": "하단근접"
         },
         "stochastic": {
-          "k": 7.7,
-          "d": 10.3,
+          "k": 0.0,
+          "d": 7.7,
           "state": "과매도"
         },
-        "updated": "2026-07-26 20:23 KST",
+        "updated": "2026-07-26 20:27 KST",
         "basis": "1h"
       }
     }
