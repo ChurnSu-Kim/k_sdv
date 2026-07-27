@@ -69,7 +69,11 @@ body {
 }
 .kpi .label { font-size: 12px; color: var(--text-muted); margin-bottom: 5px; }
 .kpi .value { font-size: 19px; font-weight: 800; }
+.kpi .kpi-sub { font-size: 11px; color: var(--text-muted); margin-top: 4px; display: flex; gap: 4px; }
+.kpi .kpi-sublbl { color: var(--text-muted); }
+.kpi .kpi-cost { color: var(--text); font-weight: 700; }
 .kpi .delta { font-size: 12px; margin-top: 3px; }
+.kpi .kpi-eval, .kpi .kpi-cost { color: var(--text); }
 .up { color: var(--up); }
 .down { color: var(--down); }
 
@@ -101,7 +105,11 @@ body {
 .asset-card .name { font-weight: 700; font-size: 15px; display: flex; justify-content: space-between; }
 .asset-card .broker { font-size: 11px; color: var(--text-muted); }
 .asset-card .price { font-size: 20px; font-weight: 800; margin: 8px 0 2px; }
-.asset-card .pl { font-size: 13px; }
+.asset-card .card-row { font-size: 13px; display: flex; justify-content: space-between; padding: 3px 0; font-variant-numeric: tabular-nums; }
+.asset-card .card-lbl { color: var(--text-muted); }
+.asset-card .pl { font-weight: 700; }
+.asset-card .pl.up { color: var(--up); }
+.asset-card .pl.down { color: var(--down); }
 .indicators { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   font-size: 11px; padding: 4px 9px; border-radius: 8px;
@@ -263,6 +271,10 @@ body {
 .chip.rsi-white { color: #ffffff; font-weight: 700; }
 .chip.macd-gold { color: #2bb46e; font-weight: 800; border-color: #2bb46e; }
 .chip.macd-dead { color: #e23b3b; font-weight: 800; border-color: #e23b3b; }
+.chip.macd-flat { color: #ffffff; font-weight: 800; border-color: #ffffff; }
+
+.ind-card.ind-flat { border-color: rgba(255,255,255,0.4); }
+.ind-card.ind-flat .ind-v { color: #ffffff; }
 
 .index-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 8px; }
 .index-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 8px 10px; box-shadow: var(--shadow); }

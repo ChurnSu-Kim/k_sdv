@@ -47,6 +47,7 @@ function rsiCls(r) {
 function macdCls(cross) {
   if (cross === '골든') return 'macd-gold';
   if (cross === '데드') return 'macd-dead';
+  if (cross === '보합') return 'macd-flat';
   return '';
 }
 // 카드 기준일시가 당일이 아닌 과거면 빨강
@@ -62,23 +63,25 @@ function assetCard(a) {
   const pnlPct = avg ? ((a.price || 0) - avg) / avg * 100 : 0;
   const plCls = pnl >= 0 ? 'up' : 'down';
   const plSign = pnl >= 0 ? '+' : '';
+  const cost = (avg || 0) * (a.qty || 0);
+  const evalAmt = a.value != null ? a.value : (a.price || 0) * (a.qty || 0);
+  const sym = ccy(a);
   const ind = a.indicators || {};
   const maArr = ind.ma && ind.ma.arrangement ? ind.ma.arrangement : '';
   const rsi = ind.rsi14 != null ? ind.rsi14 : null;
-  const macdCross = ind.macd && ind.macd.cross ? ind.macd.cross : '';
+  const macdCross = ind.macd && (ind.macd.cross || ind.macd.trend) ? (ind.macd.cross || ind.macd.trend) : '';
   const chips = [];
   if (maArr) chips.push(`<span class="chip">${maArr}</span>`);
   if (rsi != null) chips.push(`<span class="chip ${rsiCls(rsi)}">RSI ${rsi}</span>`);
   if (macdCross) chips.push(`<span class="chip ${macdCls(macdCross)}">MACD ${macdCross}</span>`);
-  const sym = ccy(a);
   const asOfCls = isStale(a.price_as_of) ? 'asof stale' : 'asof';
-  const subLabel = sym === '$' ? '현재가(USD)' : sym === '₩' ? '현재가(KRW)' : '현재가';
   return `
   <div class="asset-card clickable" data-name="${a.name}">
     <div class="name"><span>${a.name}</span><span class="broker">${a.broker || ''}</span></div>
-    <div class="price">${sym}${fmt(a.price)} <span class="${plCls}">${plSign}${fmt(a.change_rate)}%</span></div>
-    <div class="price-sub">${subLabel}</div>
-    <div class="pl ${plCls}">${plSign}${sym}${fmt(pnl)} (${pnlPct>=0?'+':''}${Math.round(pnlPct)}% · ${a.qty || ''}주)</div>
+    <div class="price">${sym}${fmt(a.price)}</div>
+    <div class="card-row"><span class="card-lbl">평가금액</span><span>${sym}${fmt(evalAmt)}</span></div>
+    <div class="card-row"><span class="card-lbl">투자금액</span><span>${sym}${fmt(cost)}</span></div>
+    <div class="card-row pl ${plCls}"><span class="card-lbl">손익(률)</span><span>${plSign}${sym}${fmt(pnl)} (${plSign}${Math.round(pnlPct)}%)</span></div>
     <div class="${asOfCls}">기준: ${a.price_as_of || '—'}</div>
     <div class="indicators">${chips.join('')}</div>
   </div>`;
@@ -139,11 +142,15 @@ function renderPortfolio(data) {
   const setKpi = (id, st, mktKey) => {
     const el = document.getElementById(id);
     if (!el) return;
-    el.querySelector('.kpi-eval').textContent = fmt(st.evalAmt) + '원';
-    el.querySelector('.kpi-pnl').textContent = (st.pnl >= 0 ? '+' : '') + fmt(st.pnl) + '원';
+    const sym = id === 'kpiUs' ? '$' : '원';
+    el.querySelector('.kpi-eval').textContent = fmt(st.evalAmt) + sym;
+    el.querySelector('.kpi-cost').textContent = fmt(st.cost) + sym;
+    el.querySelector('.kpi-pnl').textContent = (st.pnl >= 0 ? '+' : '') + fmt(st.pnl) + sym;
     el.querySelector('.kpi-pnlpct').textContent = (st.pnl >= 0 ? '+' : '') + fmt(Math.round(st.pnlPct)) + '%';
     const pe = el.querySelector('.kpi-pnlpct');
     pe.className = 'kpi-pnlpct ' + (st.pnl >= 0 ? 'up' : 'down');
+    const pp = el.querySelector('.kpi-pnl');
+    if (pp) pp.className = 'kpi-pnl ' + (st.pnl >= 0 ? 'up' : 'down');
     if (mktKey) {
       const b = el.querySelector('.mkt-badge-slot');
       if (b) b.innerHTML = badge(mktKey);
@@ -238,8 +245,9 @@ function renderTech(a) {
   const cards = [];
   cards.push(indicatorCard('RSI(14)', ind.rsi14 != null ? ind.rsi14 : '—',
     ind.rsi14 >= 70 ? 'over' : ind.rsi14 <= 30 ? 'under' : ''));
-  cards.push(indicatorCard('MACD', (macd.cross && macd.cross !== '보합') ? macd.cross : (macd.trend && macd.trend !== '보합' ? macd.trend : '0'),
-    macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : '')));
+  const macdVal = (macd.cross && macd.cross !== '') ? macd.cross : (macd.trend && macd.trend !== '' ? macd.trend : '보합');
+  cards.push(indicatorCard('MACD', macdVal,
+    macd.cross === '골든' ? 'gold' : macd.cross === '데드' ? 'dead' : (macd.cross === '보합' ? 'flat' : (macd.trend === '상승' ? 'up' : macd.trend === '하락' ? 'down' : ''))));
   cards.push(indicatorCard('이동평균 배열', ma.arrangement || '—',
     ma.arrangement === '정배열' ? 'gold' : ma.arrangement === '역배열' ? 'dead' : ''));
   cards.push(indicatorCard('MA5 / MA20 / MA60',
