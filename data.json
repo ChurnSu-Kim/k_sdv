@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27 15:40 KST",
+  "updated": "2026-07-27 22:17 KST",
   "markets": {
     "KR": {
       "status": "CLOSED",
@@ -19,16 +19,16 @@
     {
       "name": "KOSPI",
       "symbol": "^KS11",
-      "price": 6767.62,
-      "change": 77.0,
-      "change_rate": 1.15
+      "price": 6755.75,
+      "change": 65.13000000000011,
+      "change_rate": 0.97
     },
     {
       "name": "KOSDAQ",
       "symbol": "^KQ11",
-      "price": 764.65,
-      "change": 16.42999999999995,
-      "change_rate": 2.2
+      "price": 764.86,
+      "change": 16.639999999999986,
+      "change_rate": 2.22
     },
     {
       "name": "DJI",
@@ -54,23 +54,23 @@
     {
       "name": "HSI",
       "symbol": "^HSI",
-      "price": 25219.89,
-      "change": 256.65999999999985,
-      "change_rate": 1.03
+      "price": 25207.18,
+      "change": 243.95000000000073,
+      "change_rate": 0.98
     },
     {
       "name": "NI225",
       "symbol": "^N225",
-      "price": 64957.33,
-      "change": 346.1800000000003,
-      "change_rate": 0.54
+      "price": 64931.19,
+      "change": 320.0400000000009,
+      "change_rate": 0.5
     },
     {
       "name": "SX5E",
       "symbol": "^STOXX50E",
-      "price": 6280.94,
-      "change": 70.76999999999953,
-      "change_rate": 1.14
+      "price": 6355.37,
+      "change": 74.43000000000029,
+      "change_rate": 1.19
     }
   ],
   "assets": [
@@ -84,7 +84,7 @@
       "seed_price": 68058,
       "seed_as_of": "2026-07-10",
       "price": 254000.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 1.8,
       "change": 4500.0,
       "value": 3048000.0,
@@ -96,7 +96,7 @@
         "high52": 374500.0,
         "low52": 67200.0,
         "listed_shares": 5846278608.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": -2945672.0
       },
       "indicators": {
         "rsi14": 53.4,
@@ -126,13 +126,8 @@
           "d": 38.3,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[삼성전자] 신호: 홀드\n현재가 254,000 대비 평단가 68,058 → +185,942원 (+273.2%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -145,7 +140,7 @@
       "seed_price": 7083,
       "seed_as_of": "2026-07-10",
       "price": 4870.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": -0.31,
       "change": -15.0,
       "value": 136360.0,
@@ -157,7 +152,7 @@
         "high52": 14550.0,
         "low52": 4405.0,
         "listed_shares": 9796800.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": -4156.0
       },
       "indicators": {
         "rsi14": 41.0,
@@ -187,13 +182,8 @@
           "d": 11.3,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[코위버] 신호: 홀드\n현재가 4,870 대비 평단가 7,083 → -2,213원 (-31.2%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -206,7 +196,7 @@
       "seed_price": 349000,
       "seed_as_of": "2026-07-10",
       "price": 260000.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 0.39,
       "change": 1000.0,
       "value": 520000.0,
@@ -218,7 +208,7 @@
         "high52": 437500.0,
         "low52": 243000.0,
         "listed_shares": 70592343.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": -38831.0
       },
       "indicators": {
         "rsi14": 66.9,
@@ -248,13 +238,8 @@
           "d": 80.4,
           "state": "과매수"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[LG화학] 신호: 홀드\n현재가 260,000 대비 평단가 349,000 → -89,000원 (-25.5%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -267,7 +252,7 @@
       "seed_price": 2536,
       "seed_as_of": "2026-07-10",
       "price": 1162.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 0.0,
       "change": 0.0,
       "value": 176624.0,
@@ -309,65 +294,8 @@
           "d": 20.5,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "매수",
-        "text": "[한국첨단소재] 신호: 매수\n근거: MACD 골든크로스.\n현재가 1,162 대비 평단가 2,536 → -1,374원 (-54.2%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
-      }
-    },
-    {
-      "name": "나이키B(미니스탁)",
-      "code": "NKE",
-      "exch": "NYS",
-      "market": "US",
-      "type": "STOCK",
-      "broker": "한투",
-      "qty": 0.012956,
-      "seed_price": 152747,
-      "seed_as_of": "2026-07-10",
-      "price": 41.7,
-      "price_as_of": "2026-07-27 15:40 KST",
-      "change_rate": 1.73,
-      "change": 0.71,
-      "value": 0.54,
-      "indicators": {
-        "rsi14": 84.6,
-        "macd": {
-          "macd": 2.93,
-          "signal": 2.6776276457895793,
-          "hist": 0.25,
-          "cross": "",
-          "trend": "상승"
-        },
-        "ma": {
-          "ma5": 57.92,
-          "ma20": 54.63,
-          "ma60": 47.75,
-          "ma120": null,
-          "arrangement": "정배열"
-        },
-        "bollinger": {
-          "upper": 59.27,
-          "mid": 54.63,
-          "lower": 49.98,
-          "width_pct": 17.0,
-          "position": "상단돌파"
-        },
-        "stochastic": {
-          "k": 100.0,
-          "d": 100.0,
-          "state": "과매수"
-        },
-        "updated": "2026-07-27 15:40 KST",
-        "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "매도",
-        "text": "[나이키B(미니스탁)] 신호: 매도\n근거: RSI 85 과매수.\n현재가 42 대비 평단가 152,747 → -152,705원 (-100.0%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -384,16 +312,7 @@
       "change_rate": 1.83,
       "change": 3100.0,
       "value": 172300.0,
-      "fundamental": {
-        "market_cap": 280650.0,
-        "per": 32.38,
-        "pbr": 1.3,
-        "dividend_yield": 0.0,
-        "high52": 438000.0,
-        "low52": 72000.0,
-        "listed_shares": 162884638.0,
-        "foreign_net_buy": 0.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 64.5,
         "macd": {
@@ -422,13 +341,8 @@
           "d": 52.1,
           "state": "과매수"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[LG전자] 신호: 홀드\n현재가 172,300 대비 평단가 237,000 → -64,700원 (-27.3%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -441,7 +355,7 @@
       "seed_price": 100300,
       "seed_as_of": "2026-07-10",
       "price": 97900.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": -2.1,
       "change": -2100.0,
       "value": 195800.0,
@@ -453,7 +367,7 @@
         "high52": 139500.0,
         "low52": 51400.0,
         "listed_shares": 214790053.0,
-        "foreign_net_buy": -1794318.0
+        "foreign_net_buy": -1135107.0
       },
       "indicators": {
         "rsi14": 55.4,
@@ -483,13 +397,8 @@
           "d": 41.8,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[SK텔레콤] 신호: 홀드\n현재가 97,900 대비 평단가 100,300 → -2,400원 (-2.4%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -502,7 +411,7 @@
       "seed_price": 4852,
       "seed_as_of": "2026-07-10",
       "price": 3595.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 1.7,
       "change": 60.0,
       "value": 172560.0,
@@ -514,7 +423,7 @@
         "high52": 5940.0,
         "low52": 2755.0,
         "listed_shares": 1026262552.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": -125284.0
       },
       "indicators": {
         "rsi14": 55.6,
@@ -544,13 +453,8 @@
           "d": 27.2,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "매수",
-        "text": "[한온시스템] 신호: 매수\n근거: MACD 골든크로스.\n현재가 3,595 대비 평단가 4,852 → -1,257원 (-25.9%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -563,7 +467,7 @@
       "seed_price": 23080,
       "seed_as_of": "2026-07-10",
       "price": 9740.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": -1.81,
       "change": -180.0,
       "value": 545440.0,
@@ -575,7 +479,7 @@
         "high52": 31500.0,
         "low52": 884.0,
         "listed_shares": 155485660.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": -248913.0
       },
       "indicators": {
         "rsi14": 29.6,
@@ -605,13 +509,8 @@
           "d": 11.0,
           "state": "과매도"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "매수",
-        "text": "[대한광통신] 신호: 매수\n근거: RSI 30 과매도, MACD 골든크로스.\n현재가 9,740 대비 평단가 23,080 → -13,340원 (-57.8%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -628,16 +527,7 @@
       "change_rate": -0.78,
       "change": -120.0,
       "value": 151800.0,
-      "fundamental": {
-        "market_cap": 62376.0,
-        "per": -6.92,
-        "pbr": 1.86,
-        "dividend_yield": 0.0,
-        "high52": 40350.0,
-        "low52": 3320.0,
-        "listed_shares": 410907638.0,
-        "foreign_net_buy": 0.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 23.9,
         "macd": {
@@ -666,13 +556,8 @@
           "d": 3.9,
           "state": "과매도"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "매수",
-        "text": "[대우건설] 신호: 매수\n근거: RSI 24 과매도.\n현재가 15,180 대비 평단가 28,800 → -13,620원 (-47.3%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -685,47 +570,41 @@
       "qty": 0.094,
       "seed_price": 205.43,
       "seed_as_of": "2026-07-10",
-      "price": 206.84,
-      "price_as_of": "2026-07-27 09:10 KST",
-      "change_rate": -0.92,
-      "change": 1.92,
-      "value": 19.44,
-      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/overseas-price/v1/quotati",
+      "price": 208.44,
+      "price_as_of": "2026-07-27 22:17 KST",
+      "change_rate": 0.77,
+      "change": 1.6,
+      "value": 19.59,
       "indicators": {
-        "rsi14": 55.6,
+        "rsi14": 60.7,
         "macd": {
-          "macd": -1.49,
-          "signal": -2.584305730899556,
-          "hist": 1.09,
+          "macd": -1.48,
+          "signal": -2.869808089108521,
+          "hist": 1.39,
           "cross": "",
           "trend": "상승"
         },
         "ma": {
-          "ma5": 181.38,
-          "ma20": 178.57,
-          "ma60": 195.48,
+          "ma5": 182.32,
+          "ma20": 178.29,
+          "ma60": 196.05,
           "ma120": null,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 189.76,
-          "mid": 178.57,
-          "lower": 167.38,
-          "width_pct": 12.5,
+          "upper": 189.59,
+          "mid": 178.29,
+          "lower": 166.98,
+          "width_pct": 12.7,
           "position": "상단근접"
         },
         "stochastic": {
-          "k": 55.1,
-          "d": 70.8,
+          "k": 77.6,
+          "d": 65.3,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[엔비디아] 신호: 홀드\n현재가 207 대비 평단가 205 → +1원 (+0.7%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -738,46 +617,41 @@
       "qty": 0.0162,
       "seed_price": 224.37,
       "seed_as_of": "2026-07-10",
-      "price": 313.03,
-      "price_as_of": "2026-07-27 15:40 KST",
-      "change_rate": -2.08,
-      "change": 6.66,
-      "value": 5.07,
+      "price": 316.58,
+      "price_as_of": "2026-07-27 22:17 KST",
+      "change_rate": 1.13,
+      "change": 3.55,
+      "value": 5.13,
       "indicators": {
-        "rsi14": 55.6,
+        "rsi14": 62.5,
         "macd": {
-          "macd": 6.32,
-          "signal": 5.119837842883349,
-          "hist": 1.2,
+          "macd": 7.14,
+          "signal": 4.80386337935851,
+          "hist": 2.34,
           "cross": "",
           "trend": "상승"
         },
         "ma": {
-          "ma5": 399.87,
-          "ma20": 388.38,
-          "ma60": 391.53,
+          "ma5": 401.23,
+          "ma20": 387.34,
+          "ma60": 392.36,
           "ma120": null,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 417.26,
-          "mid": 388.38,
-          "lower": 359.49,
-          "width_pct": 14.9,
+          "upper": 417.04,
+          "mid": 387.34,
+          "lower": 357.64,
+          "width_pct": 15.3,
           "position": "상단근접"
         },
         "stochastic": {
-          "k": 61.4,
-          "d": 83.7,
-          "state": "중립"
+          "k": 95.3,
+          "d": 87.3,
+          "state": "과매수"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[테슬라] 신호: 홀드\n현재가 313 대비 평단가 224 → +89원 (+39.5%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -790,7 +664,7 @@
       "seed_price": 9700,
       "seed_as_of": "2026-07-10",
       "price": 11095.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 0.63,
       "change": 70.0,
       "value": 1109500.0,
@@ -802,7 +676,7 @@
         "high52": 12510.0,
         "low52": 9650.0,
         "listed_shares": 198450000.0,
-        "foreign_net_buy": 0.0
+        "foreign_net_buy": 671376.0
       },
       "indicators": {
         "rsi14": 52.0,
@@ -832,13 +706,8 @@
           "d": 24.4,
           "state": "과매도"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[TIGER 미국나스닥100커버드콜] 신호: 홀드\n현재가 11,095 대비 평단가 9,700 → +1,395원 (+14.4%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -851,7 +720,7 @@
       "seed_price": 23830,
       "seed_as_of": "2026-07-10",
       "price": 22750.0,
-      "price_as_of": "2026-07-27 15:40 KST",
+      "price_as_of": "2026-07-27 22:17 KST",
       "change_rate": 1.18,
       "change": 265.0,
       "value": 477750.0,
@@ -893,13 +762,8 @@
           "d": 66.7,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[SOL 미국S&P500] 신호: 홀드\n현재가 22,750 대비 평단가 23,830 → -1,080원 (-4.5%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -916,16 +780,7 @@
       "change_rate": 1.78,
       "change": 480.0,
       "value": 521455.0,
-      "fundamental": {
-        "market_cap": 201789.0,
-        "per": 0.0,
-        "pbr": 0.0,
-        "dividend_yield": 0.0,
-        "high52": 29000.0,
-        "low52": 21460.0,
-        "listed_shares": 735250000.0,
-        "foreign_net_buy": 0.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 63.1,
         "macd": {
@@ -954,13 +809,8 @@
           "d": 64.2,
           "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[TIGER 미국S&P500] 신호: 홀드\n현재가 27,445 대비 평단가 13,042 → +14,403원 (+110.4%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -977,16 +827,7 @@
       "change_rate": 1.27,
       "change": 130.0,
       "value": 10400.0,
-      "fundamental": {
-        "market_cap": 2751.0,
-        "per": 0.0,
-        "pbr": 0.0,
-        "dividend_yield": 0.0,
-        "high52": 10895.0,
-        "low52": 8590.0,
-        "listed_shares": 26450000.0,
-        "foreign_net_buy": 0.0
-      },
+      "error": "500 Server Error: Internal Server Error for url: https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotati",
       "indicators": {
         "rsi14": 57.0,
         "macd": {
@@ -1015,13 +856,8 @@
           "d": 86.5,
           "state": "과매수"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1d"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[TIGER 미국배당다우존스] 신호: 홀드\n현재가 10,400 대비 평단가 11,700 → -1,300원 (-11.1%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -1033,11 +869,11 @@
       "qty": 0.89067766,
       "seed_price": 3114421,
       "seed_as_of": "2026-07-10",
-      "price": 2865000.0,
-      "price_as_of": "2026-07-27 15:40 KST",
-      "change_rate": 4.14,
+      "price": 2848000.0,
+      "price_as_of": "2026-07-27 22:17 KST",
+      "change_rate": 3.38,
       "change": null,
-      "value": 2551791.0,
+      "value": 2536650.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -2481,40 +2317,35 @@
         }
       ],
       "indicators": {
-        "rsi14": 76.7,
+        "rsi14": 54.2,
         "macd": {
-          "macd": 25808.24,
-          "signal": 21661.371412844972,
-          "hist": 4146.87,
+          "macd": 21269.41,
+          "signal": 23387.94395932227,
+          "hist": -2118.53,
           "cross": "",
-          "trend": "상승"
+          "trend": "하락"
         },
         "ma": {
-          "ma5": 2845200.0,
-          "ma20": 2807300.0,
-          "ma60": 2758816.67,
-          "ma120": 2769125.0,
-          "arrangement": "혼조"
+          "ma5": 2854200.0,
+          "ma20": 2836050.0,
+          "ma60": 2774100.0,
+          "ma120": 2771675.0,
+          "arrangement": "정배열"
         },
         "bollinger": {
-          "upper": 2873855.54,
-          "mid": 2807300.0,
-          "lower": 2740744.46,
-          "width_pct": 4.7,
+          "upper": 2885326.67,
+          "mid": 2836050.0,
+          "lower": 2786773.33,
+          "width_pct": 3.5,
           "position": "상단근접"
         },
         "stochastic": {
-          "k": 100.0,
-          "d": 99.4,
-          "state": "과매수"
+          "k": 57.9,
+          "d": 64.0,
+          "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1h"
-      },
-      "ai_guide": {
-        "signal": "매도",
-        "text": "[이더리움] 신호: 매도\n근거: RSI 77 과매수.\n현재가 2,865,000 대비 평단가 3,114,421 → -249,421원 (-8.0%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -2526,11 +2357,11 @@
       "qty": 579,
       "seed_price": 2068,
       "seed_as_of": "2026-07-10",
-      "price": 1615.0,
-      "price_as_of": "2026-07-27 15:40 KST",
-      "change_rate": 0.56,
+      "price": 1608.0,
+      "price_as_of": "2026-07-27 22:17 KST",
+      "change_rate": 0.25,
       "change": null,
-      "value": 935085.0,
+      "value": 931032.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -3974,40 +3805,35 @@
         }
       ],
       "indicators": {
-        "rsi14": 58.3,
+        "rsi14": 32.0,
         "macd": {
-          "macd": 1.47,
-          "signal": 1.2761713671549983,
-          "hist": 0.19,
-          "cross": "골든",
-          "trend": "상승"
+          "macd": 0.42,
+          "signal": 0.9749390806971839,
+          "hist": -0.55,
+          "cross": "",
+          "trend": "하락"
         },
         "ma": {
-          "ma5": 1611.2,
-          "ma20": 1609.65,
-          "ma60": 1605.2,
-          "ma120": 1621.59,
+          "ma5": 1610.0,
+          "ma20": 1610.9,
+          "ma60": 1606.63,
+          "ma120": 1618.64,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 1617.33,
-          "mid": 1609.65,
-          "lower": 1601.97,
-          "width_pct": 1.0,
-          "position": "상단근접"
+          "upper": 1617.35,
+          "mid": 1610.9,
+          "lower": 1604.45,
+          "width_pct": 0.8,
+          "position": "하단근접"
         },
         "stochastic": {
-          "k": 76.9,
-          "d": 53.8,
-          "state": "중립"
+          "k": 0.0,
+          "d": 3.7,
+          "state": "과매도"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1h"
-      },
-      "ai_guide": {
-        "signal": "매수",
-        "text": "[리플] 신호: 매수\n근거: MACD 골든크로스.\n현재가 1,615 대비 평단가 2,068 → -453원 (-21.9%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     },
     {
@@ -4015,15 +3841,15 @@
       "coin": "VIRTUAL",
       "market": "CRYPTO",
       "type": "COIN",
-      "broker": "빗썴",
+      "broker": "빗썸",
       "qty": 29,
       "seed_price": 2580,
       "seed_as_of": "2026-07-10",
-      "price": 882.0,
-      "price_as_of": "2026-07-27 15:40 KST",
-      "change_rate": 2.68,
+      "price": 879.0,
+      "price_as_of": "2026-07-27 22:17 KST",
+      "change_rate": 3.29,
       "change": null,
-      "value": 25578.0,
+      "value": 25491.0,
       "chart_1h": [
         {
           "time": "1784332800000",
@@ -5467,42 +5293,36 @@
         }
       ],
       "indicators": {
-        "rsi14": 68.5,
+        "rsi14": 58.5,
         "macd": {
-          "macd": 6.4,
-          "signal": 4.43030731215728,
-          "hist": 1.97,
-          "cross": "",
-          "trend": "상승"
+          "macd": 5.5,
+          "signal": 5.647036812830528,
+          "hist": -0.15,
+          "cross": "데드",
+          "trend": "하락"
         },
         "ma": {
           "ma5": 880.0,
-          "ma20": 864.9,
-          "ma60": 858.42,
-          "ma120": 881.87,
+          "ma20": 873.65,
+          "ma60": 860.48,
+          "ma120": 877.36,
           "arrangement": "혼조"
         },
         "bollinger": {
-          "upper": 887.54,
-          "mid": 864.9,
-          "lower": 842.26,
-          "width_pct": 5.2,
+          "upper": 891.64,
+          "mid": 873.65,
+          "lower": 855.66,
+          "width_pct": 4.1,
           "position": "상단근접"
         },
         "stochastic": {
-          "k": 100.0,
-          "d": 92.6,
-          "state": "과매수"
+          "k": 72.2,
+          "d": 70.4,
+          "state": "중립"
         },
-        "updated": "2026-07-27 15:40 KST",
+        "updated": "2026-07-27 22:17 KST",
         "basis": "1h"
-      },
-      "ai_guide": {
-        "signal": "홀드",
-        "text": "[버추얼] 신호: 홀드\n현재가 882 대비 평단가 2,580 → -1,698원 (-65.8%).\n단기 변동성 주의, 분할 접근 권장. (자동 생성 가이드 — 투자 판단은 본인 책임)",
-        "generated": "2026-07-27 15:43 KST"
       }
     }
-  ],
-  "ai_guide_updated": "2026-07-27 15:43 KST"
+  ]
 }
