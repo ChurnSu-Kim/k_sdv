@@ -410,7 +410,7 @@ function renderPnl(a, avg, pnl, pnlPct, evalAmt, cost) {
     `<div class="pnl-table">${rows.map(([k, v]) => `<div class="pnl-row"><span class="lbl">${k}</span><span class="val">${v != null ? fmt(v) : '—'}</span></div>`).join('')}</div>`;
 }
 
-// 1시간봉 캔들 차트 (순수 canvas, 이평선+평단가선 plot)
+// 1시간봉 캔들 차트 (순수 canvas, 캔들 OHLC + 이평선 + 평단가선)
 function renderChart1h(a) {
   const el = document.getElementById('dpanel-chart');
   if (!el) return;
@@ -419,42 +419,58 @@ function renderChart1h(a) {
     el.innerHTML = '<div class="empty">1시간봉 차트 데이터 없음 (평일 장 중 수집)</div>';
     return;
   }
-  el.innerHTML = '<canvas id="c1h" width="600" height="300"></canvas>';
+  el.innerHTML = '<canvas id="c1h" width="640" height="320"></canvas>';
   const cv = document.getElementById('c1h');
   const ctx = cv.getContext('2d');
-  const W = cv.width, H = cv.height, pad = 30;
-  const closes = ohlc.map(d => d.close);
-  const lows = ohlc.map(d => d.low), highs = ohlc.map(d => d.high);
-  const min = Math.min(...lows), max = Math.max(...highs);
-  const sx = i => pad + i * (W - 2 * pad) / (ohlc.length - 1);
-  const sy = v => H - pad - (v - min) / (max - min) * (H - 2 * pad);
+  const W = cv.width, H = cv.height, pad = 36;
+  const all = ohlc.flatMap(d => [d.open, d.high, d.low, d.close]).filter(v => v > 0);
+  const min = Math.min(...all), max = Math.max(...all);
+  const range = (max - min) || 1;
+  const n = ohlc.length;
+  const slot = (W - 2 * pad) / n;
+  const cw = Math.max(2, Math.min(14, slot * 0.6));  // 캔들 몸통 너비
+  const sx = i => pad + slot * (i + 0.5);
+  const sy = v => H - pad - (v - min) / range * (H - 2 * pad);
+  // 가격 격자 (배경)
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)'; ctx.lineWidth = 1;
+  for (let g = 0; g <= 4; g++) {
+    const y = pad + (H - 2 * pad) * g / 4;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
+  }
   // 캔들
   ohlc.forEach((d, i) => {
     const up = d.close >= d.open;
-    ctx.strokeStyle = up ? '#e23c3c' : '#2f6bff';
-    ctx.fillStyle = up ? '#e23c3c' : '#2f6bff';
-    ctx.beginPath(); ctx.moveTo(sx(i), sy(d.high)); ctx.lineTo(sx(i), sy(d.low)); ctx.stroke();
-    ctx.fillRect(sx(i) - 2, sy(d.open), 4, Math.max(1, sy(d.close) - sy(d.open)));
+    const col = up ? '#e23c3c' : '#2f6bff';   // 한국 관례: 상승빨강/하락파랑
+    const x = sx(i);
+    // 꼬리 (고가~저가)
+    ctx.strokeStyle = col; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(x, sy(d.high)); ctx.lineTo(x, sy(d.low)); ctx.stroke();
+    // 몸통 (시가~종가, 절대좌표로 높이 보정)
+    const yO = sy(d.open), yC = sy(d.close);
+    const top = Math.min(yO, yC), h = Math.max(1, Math.abs(yO - yC));
+    ctx.fillStyle = col;
+    ctx.fillRect(x - cw / 2, top, cw, h);
   });
-  // 이평선 MA20 / MA200
-  const drawMA = (period, color) => {
-    if (ohlc.length < period) return;
-    ctx.strokeStyle = color; ctx.lineWidth = 1.5; ctx.beginPath();
-    for (let i = period - 1; i < ohlc.length; i++) {
-      const ma = closes.slice(i - period + 1, i + 1).reduce((s, v) => s + v, 0) / period;
+  // 이평선 MA20
+  if (n >= 20) {
+    ctx.strokeStyle = '#ffd54a'; ctx.lineWidth = 1.5; ctx.beginPath();
+    for (let i = 19; i < n; i++) {
+      const ma = ohlc.slice(i - 19, i + 1).reduce((s, d) => s + d.close, 0) / 20;
       const x = sx(i), y = sy(ma);
-      i === period - 1 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      i === 19 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
     }
     ctx.stroke();
-  };
-  drawMA(20, '#2f6bff');
-  drawMA(200, '#e23c3c');
+  }
   // 평단가 수평선
   const avg = a.avg_price != null ? a.avg_price : a.seed_price;
   if (avg && avg >= min && avg <= max) {
-    ctx.strokeStyle = '#ffae00'; ctx.setLineDash([6, 4]); ctx.beginPath();
-    ctx.moveTo(pad, sy(avg)); ctx.lineTo(W - pad, sy(avg)); ctx.stroke(); ctx.setLineDash([]);
+    ctx.strokeStyle = '#ffae00'; ctx.setLineDash([6, 4]); ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(pad, sy(avg)); ctx.lineTo(W - pad, sy(avg)); ctx.stroke(); ctx.setLineDash([]);
   }
+  // 축 라벨 (최고/최저가)
+  ctx.fillStyle = 'rgba(255,255,255,0.5)'; ctx.font = '11px sans-serif';
+  ctx.fillText(fmt(Math.round(max)), pad + 2, pad + 2);
+  ctx.fillText(fmt(Math.round(min)), pad + 2, H - pad - 2);
 }
 
 // 카드 클릭 → 드로어
