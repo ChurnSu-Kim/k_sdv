@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주식시황 뷰어</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-head">
+      <div>
+        <h1>주식시황</h1>
+        <div class="sub">보고서 뷰어</div>
+      </div>
+      <button class="btn-theme" id="themeBtn">🌙</button>
+    </div>
+    <div class="file-list" id="fileList">
+      <div class="file-item"><div class="date">로딩중…</div></div>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="main-head">
+      <div class="doc-title" id="docTitle">보고서를 선택하세요</div>
+      <div class="doc-date" id="docDate"></div>
+    </div>
+    <div class="preview" id="preview">
+      <div class="placeholder">좌측에서 날짜를 클릭하면 보고서가 여기에 표시됩니다.</div>
+    </div>
+  </main>
+</div>
+<script src="data/reports.js"></script>
+<script src="assets/js/viewer.js"></script>
+</body>
+</html>
