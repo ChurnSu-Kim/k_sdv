@@ -133,7 +133,7 @@ async function openReport(file) {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const md = await res.text();
     const m = file.match(/주식시황_(\d{8})\.md/);
-    if (m) { const ymd = m[1]; dateEl.textContent = `${ymd.slice(0,4)}-${ymd.slice(4,6)}-${ymd.slice(6,8)}`; }
+    if (m) { const ymd = m[1]; dateEl.textContent = `${ymy.slice(0,4)}-${ymd.slice(4,6)}-${ymd.slice(6,8)}`; }
     titleEl.textContent = '주식시황 분석 보고서';
     prev.innerHTML = `<div class="md">${renderMarkdown(md)}</div>`;
     prev.scrollTop = 0;
