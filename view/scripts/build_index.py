@@ -1,20 +1,19 @@
 #!/usr/bin/env python3
 """주식시황 뷰어 빌드 — fetch 기반 (본문 임베디드 폐기).
-크론이 data/*.md 저장만 하면 뷰어가 자동 반영됨.
-이 스크립트는 목록 인덱스(reports.json)만 생성.
-→ data/reports.json 하나만 있으면 GitHub Pages URL로 열어 자동 반영.
+크론이 data/report_YYYYMMDD.md 저장만 하면 reports.json 자동 갱신.
+GitHub Pages URL만 열면 목록+본문 자동 반영 (빌드 불필요).
 """
 import json, os, re, glob
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(BASE, "data")  # 이 프로젝트 data/ (크론이 여기 저장)
+SRC = os.path.join(BASE, "data")
 
 def main():
-    files = sorted(glob.glob(os.path.join(SRC, "주식시황_*.md")), reverse=True)
+    files = sorted(glob.glob(os.path.join(SRC, "report_*.md")), reverse=True)
     reports = []
     for f in files:
         base = os.path.basename(f)
-        m = re.search(r"주식시황_(\d{8})\.md", base)
+        m = re.search(r"report_(\d{8})\\.md", base)
         if not m:
             continue
         ymd = m.group(1)
@@ -29,7 +28,6 @@ def main():
         except Exception:
             pass
         reports.append({"date": date, "file": base, "title": title})
-
     out = os.path.join(SRC, "reports.json")
     with open(out, "w", encoding="utf-8") as fh:
         json.dump({"reports": reports}, fh, ensure_ascii=False, indent=2)
